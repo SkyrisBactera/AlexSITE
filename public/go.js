@@ -35508,7 +35508,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 	strings = $packages["strings"];
 	time = $packages["time"];
 	sliceType = $sliceType($Int);
-	arrayType = $arrayType($String, 3);
+	arrayType = $arrayType($String, 5);
 	sliceType$1 = $sliceType($emptyInterface);
 	funcType = $funcType([], [], false);
 	funcType$1 = $funcType([$Int], [], false);
@@ -35522,6 +35522,8 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 		$r = addChallenge(0, "ASCII Alteration", "To represent characters as a number, ASCII was invented to assign each character to a number. For this, you must simply convert this back to text (after deciding what the cryptic \"Number Multiplier\" means)", "The number multiplier is 2", "230 234 198 198 202 230 230", 0, "success"); /* */ $s = 1; case 1: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = addChallenge(1, "Musical Mystery", "What a mystery?", "Everything is black and white", "shaal.wav", 1, "alex"); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = addChallenge(0, "Cryptographic Craziness", "In the age of technology and the ever-growing need for heightened security and privacy, the \"Cryptographic hash function\" became popular across every service you may find on the internet. The purpose is to be able to tell if two pieces of data are the same, while not revealing what those two pieces were. It does this by performing a variety of mathematical operations on the data that cannot easily be reversed. An example function would be \"x * (x/2)\" where x is the input data. While this is a very easy operation to perform, it is very hard to predict what x was from the output.  Most companies use this for password authentication. For example, if your password for Google was \"O! You live!\", it would be stored as 4CE56E4DA84F0EBFCBD51FACAE04C706 (this is a MD5 hash, which is a very popular cryptographic hash function) which cannot be used to figure out the original password. This means that hackers who somehow get a hold of these stored \"hashes\", would be unable to produce or figure out the original password in order to log into the website.", "Your task is to create a cryptographic hash function. The requirement here is to create a function that has an input named x that outputs a number that cannot be multiplied, divided, etc. to figure out x", "When you are complete, zip me an email at davis.davalos.delosh@gmail.com with your function, and I will give you the password for this challenge", 2, "yickerhicker"); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = addChallenge(1, "Code Comprehension", "The code for this website is written in a language called Go (by Google). It is a perfect example of a programming idea called abstraction, where repetitive tasks are put into objects called functions, that allow those repetitive tasks to be accomplished in a single line of code, using prewritten code. If my code is descriptive enough, it should be quite easy to find out the answer to this", "Your job is to find out the answer to this question by reading the code for this part of the website. My code is split up into 9 different files pertaining to what it deals with. The following snippet of code handles adding challenges to the website, however I have removed the answers to other challenges for obvious reasons.", "Chal4Snippet.txt", 3, "racketball43"); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
+		$r = addChallenge(0, "Reality", "", "(i'm sorry, this ones impossible without cheating (which I encourage you to try). Why would I do that? I get the same feeling as if I got something off my chest from telling somebody else something I've been holding in, but without actually telling anybody. It won't work. I know)", "Gucci Gang, ooh, yeah, Lil Pump, yeah, Gucci Gang, ooh Gucci gang, Gucci gang, Gucci gang, Gucci gang Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Spend ten racks on a new chain My bitch love do cocaine, ooh I fuck a bitch, I forgot her name I can't buy a bitch no wedding ring Rather go and buy Balmains Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Gucci gang, Gucci gang, Gucci gang, Gucci gang Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Spend ten racks on a new chain My bitch love do cocaine, ooh I fuck a bitch, I forgot her name, yeah I can't buy no bitch no wedding ring Rather go and buy Balmains, aye Gucci gang, Gucci gang, Gucci gang My lean cost more than your rent, ooh Your mama still live in a tent, yeah Still slanging dope in the jets, huh Me and my grandma take meds, ooh None of this shit be new to me Fucking my teacher, call it tutory Bought some red bottoms, cost hella Gs Fuck your airline, fuck your company Bitch, your breath smell like some cigarettes I'd rather fuck a bitch from the projects They kicked me out the plane off a Percocet Now Lil Pump fly a private jet Everybody screaming \"fuck West Jet!\" Lil Pump still sell that meth Hunnid on my wrist sippin on Tech Fuck a lil bitch, make her pussy wet Gucci gang, Gucci gang, Gucci gang, Gucci gang Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Spend ten racks on a new chain My bitch love do cocaine, ooh I fuck a bitch, I forgot her name I can't buy a bitch no wedding ring Rather go and buy Balmains Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Gucci gang, Gucci gang, Gucci gang, Gucci gang Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Spend ten racks on a new chain My bitch love do cocaine, ooh I fuck a bitch, I forgot her name I can't buy no bitch no wedding ring Rather go and buy Balmains, aye Gucci gang, Gucci gang, Gucci gang Lil Pump, yeah, Lil Pump, ooh", 4, "I feel like I'm trapped in a cage of self deprecation. All my actions end up hurting myself, i feel like nothing I will do will fix anything. I need somebody to love, and somebody to love me back other than my parents, but that isn't happening any time soon, now is it?"); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: loadChallenges }; } $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -35545,7 +35547,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 	addChallenge = function(chalType, title, description, info, textToDecode, id, answer) {
 		var _arg, _arg$1, _arg$10, _arg$11, _arg$12, _arg$13, _arg$14, _arg$15, _arg$16, _arg$17, _arg$18, _arg$19, _arg$2, _arg$20, _arg$3, _arg$4, _arg$5, _arg$6, _arg$7, _arg$8, _arg$9, _r$1, _r$10, _r$11, _r$12, _r$13, _r$14, _r$15, _r$16, _r$17, _r$18, _r$19, _r$2, _r$20, _r$21, _r$22, _r$23, _r$24, _r$25, _r$26, _r$27, _r$28, _r$29, _r$3, _r$30, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, answer, backgroundB, br, chalType, decodeB, descP, description, div, divID, downloadButton, downloadDiv, h4Title, h5, hideButton, hintsP, id, info, infoB, subButton, textP, textToDecode, title, x, x$1, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$10 = $f._arg$10; _arg$11 = $f._arg$11; _arg$12 = $f._arg$12; _arg$13 = $f._arg$13; _arg$14 = $f._arg$14; _arg$15 = $f._arg$15; _arg$16 = $f._arg$16; _arg$17 = $f._arg$17; _arg$18 = $f._arg$18; _arg$19 = $f._arg$19; _arg$2 = $f._arg$2; _arg$20 = $f._arg$20; _arg$3 = $f._arg$3; _arg$4 = $f._arg$4; _arg$5 = $f._arg$5; _arg$6 = $f._arg$6; _arg$7 = $f._arg$7; _arg$8 = $f._arg$8; _arg$9 = $f._arg$9; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$12 = $f._r$12; _r$13 = $f._r$13; _r$14 = $f._r$14; _r$15 = $f._r$15; _r$16 = $f._r$16; _r$17 = $f._r$17; _r$18 = $f._r$18; _r$19 = $f._r$19; _r$2 = $f._r$2; _r$20 = $f._r$20; _r$21 = $f._r$21; _r$22 = $f._r$22; _r$23 = $f._r$23; _r$24 = $f._r$24; _r$25 = $f._r$25; _r$26 = $f._r$26; _r$27 = $f._r$27; _r$28 = $f._r$28; _r$29 = $f._r$29; _r$3 = $f._r$3; _r$30 = $f._r$30; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; answer = $f.answer; backgroundB = $f.backgroundB; br = $f.br; chalType = $f.chalType; decodeB = $f.decodeB; descP = $f.descP; description = $f.description; div = $f.div; divID = $f.divID; downloadButton = $f.downloadButton; downloadDiv = $f.downloadDiv; h4Title = $f.h4Title; h5 = $f.h5; hideButton = $f.hideButton; hintsP = $f.hintsP; id = $f.id; info = $f.info; infoB = $f.infoB; subButton = $f.subButton; textP = $f.textP; textToDecode = $f.textToDecode; title = $f.title; x = $f.x; x$1 = $f.x$1; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
-		_r$1 = fmt.Println(new sliceType$1([new $Int(3)])); /* */ $s = 1; case 1: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = fmt.Println(new sliceType$1([new $Int(5)])); /* */ $s = 1; case 1: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		_r$1;
 		((id < 0 || id >= answers.length) ? ($throwRuntimeError("index out of range"), undefined) : answers[id] = answer);
 		_r$2 = jQuery(new sliceType$1([new $String("<h4></h4>")])); /* */ $s = 2; case 2: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
@@ -35638,7 +35640,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 		/* } else { */ case 24:
 			_r$26 = jQuery(new sliceType$1([new $String("<p></p>")])); /* */ $s = 32; case 32: if($c) { $c = false; _r$26 = _r$26.$blk(); } if (_r$26 && _r$26.$blk !== undefined) { break s; }
 			textP = $clone(_r$26, jquery.JQuery);
-			$clone(textP, jquery.JQuery).SetText(new $String("Decode:\n" + textToDecode));
+			$clone(textP, jquery.JQuery).SetText(new $String(textToDecode));
 			_arg$12 = new h5.constructor.elem(h5);
 			_arg$13 = new backgroundB.constructor.elem(backgroundB);
 			_arg$14 = new descP.constructor.elem(descP);
@@ -35672,7 +35674,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 			_ref = easterEggs;
 			_i = 0;
 			while (true) {
-				if (!(_i < 9)) { break; }
+				if (!(_i < 27)) { break; }
 				i = _i;
 				ustr = ((_i < 0 || _i >= _ref.length) ? ($throwRuntimeError("index out of range"), undefined) : _ref[_i]);
 				$go((function(query) { return function $b(i$1, ustr$1) {
@@ -35762,9 +35764,9 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 			_r$2 = $clone(_r$1, jquery.JQuery).Hide(new sliceType$1([])); /* */ $s = 4; case 4: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 			_r$2;
 		/* } */ case 2:
-		/* */ if (unlockedEasterEggs.$length >= 4) { $s = 5; continue; }
+		/* */ if (unlockedEasterEggs.$length >= 13) { $s = 5; continue; }
 		/* */ $s = 6; continue;
-		/* if (unlockedEasterEggs.$length >= 4) { */ case 5:
+		/* if (unlockedEasterEggs.$length >= 13) { */ case 5:
 			$global.document.querySelector($externalize("#passwordDiag", $String)).close();
 			_r$3 = jQuery(new sliceType$1([new $String("#blurme")])); /* */ $s = 7; case 7: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 			_r$4 = $clone(_r$3, jquery.JQuery).RemoveClass("fogged"); /* */ $s = 8; case 8: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
@@ -35793,7 +35795,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 			_i++;
 		/* } */ $s = 3; continue; case 4:
 		_r$7 = jQuery(new sliceType$1([new $String("#eastersUnlocked")])); /* */ $s = 9; case 9: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
-		_r$8 = fmt.Sprintf("You have unlocked %v out of the %v available easter eggs", new sliceType$1([new $Int(unlockedEasterEggs.$length), new $Int(9)])); /* */ $s = 10; case 10: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
+		_r$8 = fmt.Sprintf("You have unlocked %v out of the %v available easter eggs", new sliceType$1([new $Int(unlockedEasterEggs.$length), new $Int(27)])); /* */ $s = 10; case 10: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
 		_r$9 = $clone(_r$7, jquery.JQuery).SetText(new $String(_r$8)); /* */ $s = 11; case 11: if($c) { $c = false; _r$9 = _r$9.$blk(); } if (_r$9 && _r$9.$blk !== undefined) { break s; }
 		_r$9;
 		$s = -1; return;
@@ -35855,9 +35857,9 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 		_r$5 = specialCheck(); /* */ $s = 5; case 5: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 		_r$5;
 		loadSave();
-		/* */ if (false) { $s = 6; continue; }
+		/* */ if (true) { $s = 6; continue; }
 		/* */ $s = 7; continue;
-		/* if (false) { */ case 6:
+		/* if (true) { */ case 6:
 			$r = debug(); /* */ $s = 8; case 8: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		/* } */ case 7:
 		$s = -1; return;
@@ -35932,7 +35934,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 			if (!($interfaceIsEqual(err$1, $ifaceNil))) {
 				$global.alert($externalize("Cannot save your work! Try using a different browser", $String));
 			}
-			_r$3 = $clone(store, locstor.DataStore).Save("previousRev", new $Float64(0.3)); /* */ $s = 3; case 3: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+			_r$3 = $clone(store, locstor.DataStore).Save("previousRev", new $Float64(0.4)); /* */ $s = 3; case 3: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 			err$2 = _r$3;
 			if (!($interfaceIsEqual(err$2, $ifaceNil))) {
 				$global.alert($externalize("Cannot save your work! Try using a different browser", $String));
@@ -36038,9 +36040,9 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 		$go((function $b() {
 			var _i, _r$1, _r$2, _r$3, _r$4, _ref, elem, $s, $r;
 			/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _ref = $f._ref; elem = $f.elem; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
-			/* */ if (true) { $s = 1; continue; }
+			/* */ if (false) { $s = 1; continue; }
 			/* */ $s = 2; continue;
-			/* if (true) { */ case 1:
+			/* if (false) { */ case 1:
 				_r$1 = jQuery(new sliceType$1([new $String("#develWarning")])); /* */ $s = 3; case 3: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				_r$2 = $clone(_r$1, jquery.JQuery).Hide(new sliceType$1([])); /* */ $s = 4; case 4: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 				_r$2;
@@ -36075,22 +36077,22 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 		$go((function $b() {
 			var _i, _r$1, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _ref, val, $s, $r;
 			/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _ref = $f._ref; val = $f.val; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
-			/* */ if (!((previousRev === 0.3))) { $s = 1; continue; }
+			/* */ if (!((previousRev === 0.4))) { $s = 1; continue; }
 			/* */ $s = 2; continue;
-			/* if (!((previousRev === 0.3))) { */ case 1:
+			/* if (!((previousRev === 0.4))) { */ case 1:
 				_r$1 = fmt.Println(new sliceType$1([new $String("Changes detected")])); /* */ $s = 3; case 3: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				_r$1;
 				_r$2 = jQuery(new sliceType$1([new $String("#changes")])); /* */ $s = 4; case 4: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 				_r$3 = $clone(_r$2, jquery.JQuery).Show(new sliceType$1([])); /* */ $s = 5; case 5: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 				_r$3;
 				_r$4 = jQuery(new sliceType$1([new $String("#versionChange")])); /* */ $s = 6; case 6: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
-				_r$5 = fmt.Sprintf("Upgraded from version %v to %v!", new sliceType$1([new $Float64(previousRev), new $Float64(0.3)])); /* */ $s = 7; case 7: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
+				_r$5 = fmt.Sprintf("Upgraded from version %v to %v!", new sliceType$1([new $Float64(previousRev), new $Float64(0.4)])); /* */ $s = 7; case 7: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 				_r$6 = $clone(_r$4, jquery.JQuery).SetText(new $String(_r$5)); /* */ $s = 8; case 8: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 				_r$6;
 				_ref = changelog;
 				_i = 0;
 				/* while (true) { */ case 9:
-					/* if (!(_i < 13)) { break; } */ if(!(_i < 13)) { $s = 10; continue; }
+					/* if (!(_i < 4)) { break; } */ if(!(_i < 4)) { $s = 10; continue; }
 					val = ((_i < 0 || _i >= _ref.length) ? ($throwRuntimeError("index out of range"), undefined) : _ref[_i]);
 					_r$7 = jQuery(new sliceType$1([new $String("#changeList")])); /* */ $s = 11; case 11: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 					_r$8 = fmt.Sprintf("<li>%s</li>", new sliceType$1([new $String(val)])); /* */ $s = 12; case 12: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
@@ -36146,8 +36148,8 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 		answers = arrayType.zero();
 		unlockedEasterEggs = sliceType.nil;
 		elementsToHide = $toNativeArray($kindString, ["#changes", "#birthdaySpecial", "#specialEvent"]);
-		easterEggs = $toNativeArray($kindString, ["crush%you^<3", "morgan", "bailey^;-)", "alex%root", "davis%davalos%delosh", "test", "consummation", "jasica", "anal%probe"]);
-		changelog = $toNativeArray($kindString, ["Cleaned up code", "Better in-code documentation", "Removed unused functions", "Removed redundant code in general", "Removed unecessary code", "Made non-variable variables constants for better code security", "Made repetitive code use for loops for readability and better scalability", "Added more easter eggs", "Seperated different sections of code into different files for easier reading", "Fixed bug where if multiple easter eggs were unlocked at once, only the last one would be reported", "With the bug fix above, also made report fade out after 4 seconds", "Easter egg parsing now supports custom messages and uses slice for better scalability", "Added more readability for challenges by bolding the Background, Info, etc."]);
+		easterEggs = $toNativeArray($kindString, ["crush%you^<3", "morgan", "bailey^;-) for two reasons", "alex%root", "davis%davalos%delosh", "test", "consummation", "jasica", "anal%probe", "booty", "rakesh", "chris", "github", "creep", "alida", "maya", "maya%alex^;-)", "cooper", "maxine", "payden^Yeeet", "yeet", "dead%fish", "tag", "skyrisbactera", "truth%or%dare", "never%find^That's right!", "ux985"]);
+		changelog = $toNativeArray($kindString, ["Published to Github for better reliability and openness", "Added 17 more easter eggs", "New challenges!", "Fixed bug where decode appears twice"]);
 		jQuery = jquery.NewJQuery;
 		seededRand = rand.New(rand.NewSource($clone(time.Now(), time.Time).UnixNano()));
 		_r = randString(5); /* */ $s = 11; case 11: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }

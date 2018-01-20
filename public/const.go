@@ -11,37 +11,46 @@ var (
 	easterEggs = [...]string{
 		"crush%you^<3",
 		"morgan",
-		"bailey^;-)",
+		"bailey^;-) for two reasons",
 		"alex%root",
 		"davis%davalos%delosh",
 		"test",
 		"consummation",
 		"jasica",
 		"anal%probe",
+		"booty",
+		"rakesh",
+		"chris",
+		"github",
+		"creep",
+		"alida",
+		"maya",
+		"maya%alex^;-)",
+		"cooper",
+		"maxine",
+		"payden^Yeeet",
+		"yeet",
+		"dead%fish",
+		"tag",
+		"skyrisbactera",
+		"truth%or%dare",
+		"never%find^That's right!",
+		"ux985",
 	}
 	// Element-delimited list of changes since the last revision
 	changelog = [...]string{ // Used ... to specify that the amount of elements the array should contain should match the amount of elements specified
-		"Cleaned up code",
-		"Better in-code documentation",
-		"Removed unused functions",
-		"Removed redundant code in general",
-		"Removed unecessary code",
-		"Made non-variable variables constants for better code security",
-		"Made repetitive code use for loops for readability and better scalability",
-		"Added more easter eggs",
-		"Seperated different sections of code into different files for easier reading",
-		"Fixed bug where if multiple easter eggs were unlocked at once, only the last one would be reported",
-		"With the bug fix above, also made report fade out after 4 seconds",
-		"Easter egg parsing now supports custom messages and uses slice for better scalability",
-		"Added more readability for challenges by bolding the Background, Info, etc.",
+		"Published to Github for better reliability and openness",
+		"Added 17 more easter eggs",
+		"New challenges!",
+		"Fixed bug where decode appears twice",
 	}
 )
 
 const (
 	// Amounts that exist of something
-	challengeSize = 3               // How many challenges are implemented for use in other parts of the code
+	challengeSize = 5               // How many challenges are implemented for use in other parts of the code
 	easterSize    = len(easterEggs) // How many easter eggs are implemented for use in other parts of the code, and for the user
 	// Version History
-	revision = 0.3   // Used to mark updates of the website, and will appear in the changelog. Increases everyday changes are made
-	devel    = false // Used to determine if debugging mode should be used, and also activates development warning
+	revision = 0.4  // Used to mark updates of the website, and will appear in the changelog. Increases everyday changes are made
+	devel    = true // Used to determine if debugging mode should be used, and also activates development warning
 )
