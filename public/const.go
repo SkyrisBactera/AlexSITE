@@ -51,6 +51,6 @@ const (
 	challengeSize = 5               // How many challenges are implemented for use in other parts of the code
 	easterSize    = len(easterEggs) // How many easter eggs are implemented for use in other parts of the code, and for the user
 	// Version History
-	revision = 0.4  // Used to mark updates of the website, and will appear in the changelog. Increases everyday changes are made
-	devel    = true // Used to determine if debugging mode should be used, and also activates development warning
+	revision = 0.4   // Used to mark updates of the website, and will appear in the changelog. Increases everyday changes are made
+	devel    = false // Used to determine if debugging mode should be used, and also activates development warning
 )
