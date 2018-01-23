@@ -39,18 +39,16 @@ var (
 	}
 	// Element-delimited list of changes since the last revision
 	changelog = [...]string{ // Used ... to specify that the amount of elements the array should contain should match the amount of elements specified
-		"Published to Github for better reliability and openness",
-		"Added 17 more easter eggs",
-		"New challenges!",
-		"Fixed bug where decode appears twice",
+		"Removed cringy challenge #5",
 	}
 )
 
 const (
 	// Amounts that exist of something
-	challengeSize = 5               // How many challenges are implemented for use in other parts of the code
-	easterSize    = len(easterEggs) // How many easter eggs are implemented for use in other parts of the code, and for the user
+	challengeSize = 4 // How many challenges are implemented for use in other parts of the
+	code
+	easterSize = len(easterEggs) // How many easter eggs are implemented for use in other parts of the code, and for the user
 	// Version History
-	revision = 0.4   // Used to mark updates of the website, and will appear in the changelog. Increases everyday changes are made
+	revision = 0.5   // Used to mark updates of the website, and will appear in the changelog. Increases everyday changes are made
 	devel    = false // Used to determine if debugging mode should be used, and also activates development warning
 )

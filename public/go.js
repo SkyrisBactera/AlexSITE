@@ -2306,7 +2306,7 @@ $packages["runtime"] = (function() {
 		if (!(goroot === undefined)) {
 			return $internalize(goroot, $String);
 		}
-		return "/usr/lib/go-1.9";
+		return "c:\\go";
 	};
 	$pkg.GOROOT = GOROOT;
 	Goexit = function() {
@@ -29961,7 +29961,7 @@ $packages["image/color"] = (function() {
 	return $pkg;
 })();
 $packages["honnef.co/go/js/dom"] = (function() {
-	var $pkg = {}, $init, js, color, strings, time, TokenList, Document, DocumentFragment, documentFragment, document, htmlDocument, URLUtils, Location, HTMLElement, Window, window, Selection, Screen, Navigator, Geolocation, PositionError, PositionOptions, Position, Coordinates, History, Console, DocumentType, DOMImplementation, StyleSheet, Node, BasicNode, Element, ClientRect, BasicHTMLElement, BasicElement, HTMLAnchorElement, HTMLAppletElement, HTMLAreaElement, HTMLAudioElement, HTMLBRElement, HTMLBaseElement, HTMLBodyElement, ValidityState, HTMLButtonElement, HTMLCanvasElement, CanvasRenderingContext2D, ImageData, CanvasGradient, CanvasPattern, TextMetrics, HTMLDListElement, HTMLDataElement, HTMLDataListElement, HTMLDirectoryElement, HTMLDivElement, HTMLEmbedElement, HTMLFieldSetElement, HTMLFontElement, HTMLFormElement, HTMLFrameElement, HTMLFrameSetElement, HTMLHRElement, HTMLHeadElement, HTMLHeadingElement, HTMLHtmlElement, HTMLIFrameElement, HTMLImageElement, HTMLInputElement, File, HTMLKeygenElement, HTMLLIElement, HTMLLabelElement, HTMLLegendElement, HTMLLinkElement, HTMLMapElement, HTMLMediaElement, HTMLMenuElement, HTMLMetaElement, HTMLMeterElement, HTMLModElement, HTMLOListElement, HTMLObjectElement, HTMLOptGroupElement, HTMLOptionElement, HTMLOutputElement, HTMLParagraphElement, HTMLParamElement, HTMLPreElement, HTMLProgressElement, HTMLQuoteElement, HTMLScriptElement, HTMLSelectElement, HTMLSourceElement, HTMLSpanElement, HTMLStyleElement, HTMLTableCaptionElement, HTMLTableCellElement, HTMLTableColElement, HTMLTableDataCellElement, HTMLTableElement, HTMLTableHeaderCellElement, HTMLTableRowElement, HTMLTableSectionElement, HTMLTextAreaElement, HTMLTimeElement, HTMLTitleElement, TextTrack, HTMLTrackElement, HTMLUListElement, HTMLUnknownElement, HTMLVideoElement, CSSStyleDeclaration, Text, Event, BasicEvent, AnimationEvent, AudioProcessingEvent, BeforeInputEvent, BeforeUnloadEvent, BlobEvent, ClipboardEvent, CloseEvent, CompositionEvent, CSSFontFaceLoadEvent, CustomEvent, DeviceLightEvent, DeviceMotionEvent, DeviceOrientationEvent, DeviceProximityEvent, DOMTransactionEvent, DragEvent, EditingBeforeInputEvent, ErrorEvent, FocusEvent, GamepadEvent, HashChangeEvent, IDBVersionChangeEvent, KeyboardEvent, MediaStreamEvent, MessageEvent, MouseEvent, MutationEvent, OfflineAudioCompletionEvent, PageTransitionEvent, PointerEvent, PopStateEvent, ProgressEvent, RelatedEvent, RTCPeerConnectionIceEvent, SensorEvent, StorageEvent, SVGEvent, SVGZoomEvent, TimeEvent, TouchEvent, TrackEvent, TransitionEvent, UIEvent, UserProximityEvent, WheelEvent, sliceType, ptrType, sliceType$1, sliceType$2, sliceType$3, sliceType$4, ptrType$1, ptrType$2, ptrType$3, ptrType$4, ptrType$5, ptrType$6, sliceType$5, ptrType$7, sliceType$6, sliceType$7, sliceType$8, ptrType$8, ptrType$9, sliceType$9, ptrType$10, sliceType$10, ptrType$11, sliceType$11, ptrType$12, funcType, funcType$1, sliceType$12, ptrType$13, ptrType$14, sliceType$13, ptrType$15, ptrType$16, sliceType$14, ptrType$17, sliceType$15, ptrType$18, sliceType$16, ptrType$19, ptrType$20, ptrType$21, funcType$2, sliceType$17, ptrType$22, ptrType$23, ptrType$24, ptrType$25, mapType, ptrType$26, ptrType$27, funcType$3, ptrType$28, ptrType$29, funcType$4, funcType$5, ptrType$30, ptrType$31, ptrType$32, ptrType$33, ptrType$34, ptrType$35, ptrType$36, ptrType$37, ptrType$38, ptrType$39, ptrType$40, ptrType$41, ptrType$42, ptrType$43, ptrType$44, ptrType$45, ptrType$46, ptrType$47, ptrType$48, ptrType$49, ptrType$50, ptrType$51, ptrType$52, ptrType$53, ptrType$54, ptrType$55, ptrType$56, ptrType$57, ptrType$58, ptrType$59, toString, callRecover, elementConstructor, arrayToObjects, nodeListToObjects, nodeListToNodes, nodeListToElements, nodeListToHTMLElements, wrapDocument, wrapDocumentFragment, wrapNode, wrapElement, wrapHTMLElement, getForm, getLabels, getOptions, GetWindow, wrapDOMHighResTimeStamp, wrapEvent;
+	var $pkg = {}, $init, js, color, strings, time, TokenList, Document, DocumentFragment, documentFragment, document, htmlDocument, URLUtils, Location, HTMLElement, Window, window, Selection, Screen, Navigator, Geolocation, PositionError, PositionOptions, Position, Coordinates, History, Console, DocumentType, DOMImplementation, StyleSheet, Node, BasicNode, Element, ClientRect, BasicHTMLElement, BasicElement, HTMLAnchorElement, HTMLAppletElement, HTMLAreaElement, HTMLAudioElement, HTMLBRElement, HTMLBaseElement, HTMLBodyElement, ValidityState, HTMLButtonElement, HTMLCanvasElement, CanvasRenderingContext2D, ImageData, TextMetrics, HTMLDListElement, HTMLDataElement, HTMLDataListElement, HTMLDirectoryElement, HTMLDivElement, HTMLEmbedElement, HTMLFieldSetElement, HTMLFontElement, HTMLFormElement, HTMLFrameElement, HTMLFrameSetElement, HTMLHRElement, HTMLHeadElement, HTMLHeadingElement, HTMLHtmlElement, HTMLIFrameElement, HTMLImageElement, HTMLInputElement, File, HTMLKeygenElement, HTMLLIElement, HTMLLabelElement, HTMLLegendElement, HTMLLinkElement, HTMLMapElement, HTMLMediaElement, HTMLMenuElement, HTMLMetaElement, HTMLMeterElement, HTMLModElement, HTMLOListElement, HTMLObjectElement, HTMLOptGroupElement, HTMLOptionElement, HTMLOutputElement, HTMLParagraphElement, HTMLParamElement, HTMLPreElement, HTMLProgressElement, HTMLQuoteElement, HTMLScriptElement, HTMLSelectElement, HTMLSourceElement, HTMLSpanElement, HTMLStyleElement, HTMLTableCaptionElement, HTMLTableCellElement, HTMLTableColElement, HTMLTableDataCellElement, HTMLTableElement, HTMLTableHeaderCellElement, HTMLTableRowElement, HTMLTableSectionElement, HTMLTextAreaElement, HTMLTimeElement, HTMLTitleElement, TextTrack, HTMLTrackElement, HTMLUListElement, HTMLUnknownElement, HTMLVideoElement, CSSStyleDeclaration, Text, Event, BasicEvent, AnimationEvent, AudioProcessingEvent, BeforeInputEvent, BeforeUnloadEvent, BlobEvent, ClipboardEvent, CloseEvent, CompositionEvent, CSSFontFaceLoadEvent, CustomEvent, DeviceLightEvent, DeviceMotionEvent, DeviceOrientationEvent, DeviceProximityEvent, DOMTransactionEvent, DragEvent, EditingBeforeInputEvent, ErrorEvent, FocusEvent, GamepadEvent, HashChangeEvent, IDBVersionChangeEvent, KeyboardEvent, MediaStreamEvent, MessageEvent, MouseEvent, MutationEvent, OfflineAudioCompletionEvent, PageTransitionEvent, PointerEvent, PopStateEvent, ProgressEvent, RelatedEvent, RTCPeerConnectionIceEvent, SensorEvent, StorageEvent, SVGEvent, SVGZoomEvent, TimeEvent, TouchEvent, TrackEvent, TransitionEvent, UIEvent, UserProximityEvent, WheelEvent, sliceType, ptrType, sliceType$1, sliceType$2, sliceType$3, sliceType$4, ptrType$1, ptrType$2, ptrType$3, ptrType$4, ptrType$5, ptrType$6, sliceType$5, ptrType$7, sliceType$6, sliceType$7, sliceType$8, ptrType$8, ptrType$9, sliceType$9, ptrType$10, sliceType$10, ptrType$11, sliceType$11, ptrType$12, funcType, funcType$1, sliceType$12, ptrType$13, ptrType$14, ptrType$15, sliceType$13, ptrType$16, ptrType$17, sliceType$14, ptrType$18, sliceType$15, ptrType$19, sliceType$16, ptrType$20, ptrType$21, ptrType$22, funcType$2, sliceType$17, ptrType$23, ptrType$24, ptrType$25, ptrType$26, mapType, ptrType$27, ptrType$28, funcType$3, ptrType$29, ptrType$30, funcType$4, funcType$5, ptrType$31, ptrType$32, ptrType$33, ptrType$34, ptrType$35, ptrType$36, ptrType$37, ptrType$38, ptrType$39, ptrType$40, ptrType$41, ptrType$42, ptrType$43, ptrType$44, ptrType$45, ptrType$46, ptrType$47, ptrType$48, ptrType$49, ptrType$50, ptrType$51, ptrType$52, ptrType$53, ptrType$54, ptrType$55, ptrType$56, ptrType$57, ptrType$58, toString, callRecover, elementConstructor, arrayToObjects, nodeListToObjects, nodeListToNodes, nodeListToElements, nodeListToHTMLElements, wrapDocument, wrapDocumentFragment, wrapNode, wrapElement, wrapHTMLElement, getForm, getLabels, getOptions, GetWindow, wrapDOMHighResTimeStamp, wrapEvent;
 	js = $packages["github.com/gopherjs/gopherjs/js"];
 	color = $packages["image/color"];
 	strings = $packages["strings"];
@@ -29985,7 +29985,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	documentFragment = $pkg.documentFragment = $newType(0, $kindStruct, "dom.documentFragment", true, "honnef.co/go/js/dom", false, function(BasicNode_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicNode = ptrType$23.nil;
+			this.BasicNode = ptrType$24.nil;
 			return;
 		}
 		this.BasicNode = BasicNode_;
@@ -29993,7 +29993,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	document = $pkg.document = $newType(0, $kindStruct, "dom.document", true, "honnef.co/go/js/dom", false, function(BasicNode_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicNode = ptrType$23.nil;
+			this.BasicNode = ptrType$24.nil;
 			return;
 		}
 		this.BasicNode = BasicNode_;
@@ -30001,7 +30001,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	htmlDocument = $pkg.htmlDocument = $newType(0, $kindStruct, "dom.htmlDocument", true, "honnef.co/go/js/dom", false, function(document_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.document = ptrType$24.nil;
+			this.document = ptrType$25.nil;
 			return;
 		}
 		this.document = document_;
@@ -30112,7 +30112,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	Position = $pkg.Position = $newType(0, $kindStruct, "dom.Position", true, "honnef.co/go/js/dom", true, function(Coords_, Timestamp_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.Coords = ptrType$31.nil;
+			this.Coords = ptrType$32.nil;
 			this.Timestamp = new time.Time.ptr(new $Uint64(0, 0), new $Int64(0, 0), ptrType$4.nil);
 			return;
 		}
@@ -30186,7 +30186,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	BasicHTMLElement = $pkg.BasicHTMLElement = $newType(0, $kindStruct, "dom.BasicHTMLElement", true, "honnef.co/go/js/dom", true, function(BasicElement_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicElement = ptrType$32.nil;
+			this.BasicElement = ptrType$33.nil;
 			return;
 		}
 		this.BasicElement = BasicElement_;
@@ -30194,7 +30194,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	BasicElement = $pkg.BasicElement = $newType(0, $kindStruct, "dom.BasicElement", true, "honnef.co/go/js/dom", true, function(BasicNode_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicNode = ptrType$23.nil;
+			this.BasicNode = ptrType$24.nil;
 			return;
 		}
 		this.BasicNode = BasicNode_;
@@ -30430,22 +30430,6 @@ $packages["honnef.co/go/js/dom"] = (function() {
 		this.Width = Width_;
 		this.Height = Height_;
 		this.Data = Data_;
-	});
-	CanvasGradient = $pkg.CanvasGradient = $newType(0, $kindStruct, "dom.CanvasGradient", true, "honnef.co/go/js/dom", true, function(Object_) {
-		this.$val = this;
-		if (arguments.length === 0) {
-			this.Object = null;
-			return;
-		}
-		this.Object = Object_;
-	});
-	CanvasPattern = $pkg.CanvasPattern = $newType(0, $kindStruct, "dom.CanvasPattern", true, "honnef.co/go/js/dom", true, function(Object_) {
-		this.$val = this;
-		if (arguments.length === 0) {
-			this.Object = null;
-			return;
-		}
-		this.Object = Object_;
 	});
 	TextMetrics = $pkg.TextMetrics = $newType(0, $kindStruct, "dom.TextMetrics", true, "honnef.co/go/js/dom", true, function(Object_, Width_, ActualBoundingBoxLeft_, ActualBoundingBoxRight_, FontBoundingBoxAscent_, FontBoundingBoxDescent_, ActualBoundingBoxAscent_, ActualBoundingBoxDescent_, EmHeightAscent_, EmHeightDescent_, HangingBaseline_, AlphabeticBaseline_, IdeographicBaseline_) {
 		this.$val = this;
@@ -31364,7 +31348,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	Text = $pkg.Text = $newType(0, $kindStruct, "dom.Text", true, "honnef.co/go/js/dom", true, function(BasicNode_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicNode = ptrType$23.nil;
+			this.BasicNode = ptrType$24.nil;
 			return;
 		}
 		this.BasicNode = BasicNode_;
@@ -31381,7 +31365,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	AnimationEvent = $pkg.AnimationEvent = $newType(0, $kindStruct, "dom.AnimationEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31389,7 +31373,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	AudioProcessingEvent = $pkg.AudioProcessingEvent = $newType(0, $kindStruct, "dom.AudioProcessingEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31397,7 +31381,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	BeforeInputEvent = $pkg.BeforeInputEvent = $newType(0, $kindStruct, "dom.BeforeInputEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31405,7 +31389,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	BeforeUnloadEvent = $pkg.BeforeUnloadEvent = $newType(0, $kindStruct, "dom.BeforeUnloadEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31413,7 +31397,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	BlobEvent = $pkg.BlobEvent = $newType(0, $kindStruct, "dom.BlobEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31421,7 +31405,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	ClipboardEvent = $pkg.ClipboardEvent = $newType(0, $kindStruct, "dom.ClipboardEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31429,7 +31413,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	CloseEvent = $pkg.CloseEvent = $newType(0, $kindStruct, "dom.CloseEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_, Code_, Reason_, WasClean_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			this.Code = 0;
 			this.Reason = "";
 			this.WasClean = false;
@@ -31443,7 +31427,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	CompositionEvent = $pkg.CompositionEvent = $newType(0, $kindStruct, "dom.CompositionEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31451,7 +31435,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	CSSFontFaceLoadEvent = $pkg.CSSFontFaceLoadEvent = $newType(0, $kindStruct, "dom.CSSFontFaceLoadEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31459,7 +31443,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	CustomEvent = $pkg.CustomEvent = $newType(0, $kindStruct, "dom.CustomEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31467,7 +31451,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	DeviceLightEvent = $pkg.DeviceLightEvent = $newType(0, $kindStruct, "dom.DeviceLightEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31475,7 +31459,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	DeviceMotionEvent = $pkg.DeviceMotionEvent = $newType(0, $kindStruct, "dom.DeviceMotionEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31483,7 +31467,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	DeviceOrientationEvent = $pkg.DeviceOrientationEvent = $newType(0, $kindStruct, "dom.DeviceOrientationEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31491,7 +31475,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	DeviceProximityEvent = $pkg.DeviceProximityEvent = $newType(0, $kindStruct, "dom.DeviceProximityEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31499,7 +31483,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	DOMTransactionEvent = $pkg.DOMTransactionEvent = $newType(0, $kindStruct, "dom.DOMTransactionEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31507,7 +31491,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	DragEvent = $pkg.DragEvent = $newType(0, $kindStruct, "dom.DragEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31515,7 +31499,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	EditingBeforeInputEvent = $pkg.EditingBeforeInputEvent = $newType(0, $kindStruct, "dom.EditingBeforeInputEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31523,7 +31507,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	ErrorEvent = $pkg.ErrorEvent = $newType(0, $kindStruct, "dom.ErrorEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31531,7 +31515,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	FocusEvent = $pkg.FocusEvent = $newType(0, $kindStruct, "dom.FocusEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31539,7 +31523,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	GamepadEvent = $pkg.GamepadEvent = $newType(0, $kindStruct, "dom.GamepadEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31547,7 +31531,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	HashChangeEvent = $pkg.HashChangeEvent = $newType(0, $kindStruct, "dom.HashChangeEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31555,7 +31539,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	IDBVersionChangeEvent = $pkg.IDBVersionChangeEvent = $newType(0, $kindStruct, "dom.IDBVersionChangeEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31563,7 +31547,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	KeyboardEvent = $pkg.KeyboardEvent = $newType(0, $kindStruct, "dom.KeyboardEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_, AltKey_, CharCode_, CtrlKey_, Key_, KeyIdentifier_, KeyCode_, Locale_, Location_, KeyLocation_, MetaKey_, Repeat_, ShiftKey_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			this.AltKey = false;
 			this.CharCode = 0;
 			this.CtrlKey = false;
@@ -31595,7 +31579,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	MediaStreamEvent = $pkg.MediaStreamEvent = $newType(0, $kindStruct, "dom.MediaStreamEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31603,7 +31587,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	MessageEvent = $pkg.MessageEvent = $newType(0, $kindStruct, "dom.MessageEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_, Data_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			this.Data = null;
 			return;
 		}
@@ -31613,7 +31597,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	MouseEvent = $pkg.MouseEvent = $newType(0, $kindStruct, "dom.MouseEvent", true, "honnef.co/go/js/dom", true, function(UIEvent_, AltKey_, Button_, ClientX_, ClientY_, CtrlKey_, MetaKey_, MovementX_, MovementY_, ScreenX_, ScreenY_, ShiftKey_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.UIEvent = ptrType$20.nil;
+			this.UIEvent = ptrType$21.nil;
 			this.AltKey = false;
 			this.Button = 0;
 			this.ClientX = 0;
@@ -31643,7 +31627,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	MutationEvent = $pkg.MutationEvent = $newType(0, $kindStruct, "dom.MutationEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31651,7 +31635,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	OfflineAudioCompletionEvent = $pkg.OfflineAudioCompletionEvent = $newType(0, $kindStruct, "dom.OfflineAudioCompletionEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31659,7 +31643,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	PageTransitionEvent = $pkg.PageTransitionEvent = $newType(0, $kindStruct, "dom.PageTransitionEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31667,7 +31651,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	PointerEvent = $pkg.PointerEvent = $newType(0, $kindStruct, "dom.PointerEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31675,7 +31659,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	PopStateEvent = $pkg.PopStateEvent = $newType(0, $kindStruct, "dom.PopStateEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31683,7 +31667,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	ProgressEvent = $pkg.ProgressEvent = $newType(0, $kindStruct, "dom.ProgressEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31691,7 +31675,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	RelatedEvent = $pkg.RelatedEvent = $newType(0, $kindStruct, "dom.RelatedEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31699,7 +31683,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	RTCPeerConnectionIceEvent = $pkg.RTCPeerConnectionIceEvent = $newType(0, $kindStruct, "dom.RTCPeerConnectionIceEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31707,7 +31691,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	SensorEvent = $pkg.SensorEvent = $newType(0, $kindStruct, "dom.SensorEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31715,7 +31699,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	StorageEvent = $pkg.StorageEvent = $newType(0, $kindStruct, "dom.StorageEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31723,7 +31707,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	SVGEvent = $pkg.SVGEvent = $newType(0, $kindStruct, "dom.SVGEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31731,7 +31715,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	SVGZoomEvent = $pkg.SVGZoomEvent = $newType(0, $kindStruct, "dom.SVGZoomEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31739,7 +31723,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	TimeEvent = $pkg.TimeEvent = $newType(0, $kindStruct, "dom.TimeEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31747,7 +31731,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	TouchEvent = $pkg.TouchEvent = $newType(0, $kindStruct, "dom.TouchEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31755,7 +31739,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	TrackEvent = $pkg.TrackEvent = $newType(0, $kindStruct, "dom.TrackEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31763,7 +31747,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	TransitionEvent = $pkg.TransitionEvent = $newType(0, $kindStruct, "dom.TransitionEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31771,7 +31755,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	UIEvent = $pkg.UIEvent = $newType(0, $kindStruct, "dom.UIEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31779,7 +31763,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	UserProximityEvent = $pkg.UserProximityEvent = $newType(0, $kindStruct, "dom.UserProximityEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			return;
 		}
 		this.BasicEvent = BasicEvent_;
@@ -31787,7 +31771,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	WheelEvent = $pkg.WheelEvent = $newType(0, $kindStruct, "dom.WheelEvent", true, "honnef.co/go/js/dom", true, function(BasicEvent_, DeltaX_, DeltaY_, DeltaZ_, DeltaMode_) {
 		this.$val = this;
 		if (arguments.length === 0) {
-			this.BasicEvent = ptrType$19.nil;
+			this.BasicEvent = ptrType$20.nil;
 			this.DeltaX = 0;
 			this.DeltaY = 0;
 			this.DeltaZ = 0;
@@ -31828,63 +31812,62 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	funcType = $funcType([], [], false);
 	funcType$1 = $funcType([ptrType], [], false);
 	sliceType$12 = $sliceType($Float64);
-	ptrType$13 = $ptrType(ImageData);
-	ptrType$14 = $ptrType(File);
-	sliceType$13 = $sliceType(ptrType$14);
-	ptrType$15 = $ptrType(HTMLDataListElement);
-	ptrType$16 = $ptrType(HTMLAreaElement);
-	sliceType$14 = $sliceType(ptrType$16);
-	ptrType$17 = $ptrType(HTMLTableCellElement);
-	sliceType$15 = $sliceType(ptrType$17);
-	ptrType$18 = $ptrType(HTMLTableRowElement);
-	sliceType$16 = $sliceType(ptrType$18);
-	ptrType$19 = $ptrType(BasicEvent);
-	ptrType$20 = $ptrType(UIEvent);
-	ptrType$21 = $ptrType(TokenList);
+	ptrType$13 = $ptrType(Element);
+	ptrType$14 = $ptrType(ImageData);
+	ptrType$15 = $ptrType(File);
+	sliceType$13 = $sliceType(ptrType$15);
+	ptrType$16 = $ptrType(HTMLDataListElement);
+	ptrType$17 = $ptrType(HTMLAreaElement);
+	sliceType$14 = $sliceType(ptrType$17);
+	ptrType$18 = $ptrType(HTMLTableCellElement);
+	sliceType$15 = $sliceType(ptrType$18);
+	ptrType$19 = $ptrType(HTMLTableRowElement);
+	sliceType$16 = $sliceType(ptrType$19);
+	ptrType$20 = $ptrType(BasicEvent);
+	ptrType$21 = $ptrType(UIEvent);
+	ptrType$22 = $ptrType(TokenList);
 	funcType$2 = $funcType([Event], [], false);
 	sliceType$17 = $sliceType(StyleSheet);
-	ptrType$22 = $ptrType(Location);
-	ptrType$23 = $ptrType(BasicNode);
-	ptrType$24 = $ptrType(document);
-	ptrType$25 = $ptrType(htmlDocument);
+	ptrType$23 = $ptrType(Location);
+	ptrType$24 = $ptrType(BasicNode);
+	ptrType$25 = $ptrType(document);
+	ptrType$26 = $ptrType(htmlDocument);
 	mapType = $mapType($String, $String);
-	ptrType$26 = $ptrType(CSSStyleDeclaration);
-	ptrType$27 = $ptrType(Console);
+	ptrType$27 = $ptrType(CSSStyleDeclaration);
+	ptrType$28 = $ptrType(Console);
 	funcType$3 = $funcType([time.Duration], [], false);
-	ptrType$28 = $ptrType(Screen);
-	ptrType$29 = $ptrType(window);
+	ptrType$29 = $ptrType(Screen);
+	ptrType$30 = $ptrType(window);
 	funcType$4 = $funcType([Position], [], false);
 	funcType$5 = $funcType([PositionError], [], false);
-	ptrType$30 = $ptrType(PositionError);
-	ptrType$31 = $ptrType(Coordinates);
-	ptrType$32 = $ptrType(BasicElement);
-	ptrType$33 = $ptrType(HTMLAnchorElement);
-	ptrType$34 = $ptrType(HTMLAppletElement);
-	ptrType$35 = $ptrType(HTMLBaseElement);
-	ptrType$36 = $ptrType(ValidityState);
-	ptrType$37 = $ptrType(HTMLButtonElement);
-	ptrType$38 = $ptrType(CanvasRenderingContext2D);
-	ptrType$39 = $ptrType(HTMLCanvasElement);
-	ptrType$40 = $ptrType(TextMetrics);
-	ptrType$41 = $ptrType(CanvasGradient);
-	ptrType$42 = $ptrType(CanvasPattern);
-	ptrType$43 = $ptrType(color.RGBA);
-	ptrType$44 = $ptrType(HTMLFieldSetElement);
-	ptrType$45 = $ptrType(HTMLIFrameElement);
-	ptrType$46 = $ptrType(HTMLInputElement);
-	ptrType$47 = $ptrType(HTMLKeygenElement);
-	ptrType$48 = $ptrType(HTMLLegendElement);
-	ptrType$49 = $ptrType(HTMLLinkElement);
-	ptrType$50 = $ptrType(HTMLMapElement);
-	ptrType$51 = $ptrType(HTMLObjectElement);
-	ptrType$52 = $ptrType(HTMLOutputElement);
-	ptrType$53 = $ptrType(HTMLSelectElement);
-	ptrType$54 = $ptrType(HTMLTableSectionElement);
-	ptrType$55 = $ptrType(HTMLTextAreaElement);
-	ptrType$56 = $ptrType(TextTrack);
-	ptrType$57 = $ptrType(HTMLTrackElement);
-	ptrType$58 = $ptrType(KeyboardEvent);
-	ptrType$59 = $ptrType(MouseEvent);
+	ptrType$31 = $ptrType(PositionError);
+	ptrType$32 = $ptrType(Coordinates);
+	ptrType$33 = $ptrType(BasicElement);
+	ptrType$34 = $ptrType(HTMLAnchorElement);
+	ptrType$35 = $ptrType(HTMLAppletElement);
+	ptrType$36 = $ptrType(HTMLBaseElement);
+	ptrType$37 = $ptrType(ValidityState);
+	ptrType$38 = $ptrType(HTMLButtonElement);
+	ptrType$39 = $ptrType(CanvasRenderingContext2D);
+	ptrType$40 = $ptrType(HTMLCanvasElement);
+	ptrType$41 = $ptrType(TextMetrics);
+	ptrType$42 = $ptrType(color.RGBA);
+	ptrType$43 = $ptrType(HTMLFieldSetElement);
+	ptrType$44 = $ptrType(HTMLIFrameElement);
+	ptrType$45 = $ptrType(HTMLInputElement);
+	ptrType$46 = $ptrType(HTMLKeygenElement);
+	ptrType$47 = $ptrType(HTMLLegendElement);
+	ptrType$48 = $ptrType(HTMLLinkElement);
+	ptrType$49 = $ptrType(HTMLMapElement);
+	ptrType$50 = $ptrType(HTMLObjectElement);
+	ptrType$51 = $ptrType(HTMLOutputElement);
+	ptrType$52 = $ptrType(HTMLSelectElement);
+	ptrType$53 = $ptrType(HTMLTableSectionElement);
+	ptrType$54 = $ptrType(HTMLTextAreaElement);
+	ptrType$55 = $ptrType(TextTrack);
+	ptrType$56 = $ptrType(HTMLTrackElement);
+	ptrType$57 = $ptrType(KeyboardEvent);
+	ptrType$58 = $ptrType(MouseEvent);
 	toString = function(o) {
 		var o;
 		if (o === null || o === undefined) {
@@ -33668,12 +33651,6 @@ $packages["honnef.co/go/js/dom"] = (function() {
 		imd.Object.data[(index + 3 >> 0)] = c.A;
 	};
 	ImageData.prototype.Set = function(x, y, c) { return this.$val.Set(x, y, c); };
-	CanvasGradient.ptr.prototype.AddColorStop = function(offset, color$1) {
-		var cg, color$1, offset;
-		cg = this;
-		cg.Object.addColorStop(offset, $externalize(color$1, $String));
-	};
-	CanvasGradient.prototype.AddColorStop = function(offset, color$1) { return this.$val.AddColorStop(offset, color$1); };
 	HTMLCanvasElement.ptr.prototype.GetContext2d = function() {
 		var ctx, e;
 		e = this;
@@ -33756,19 +33733,19 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	CanvasRenderingContext2D.ptr.prototype.CreateLinearGradient = function(x0, y0, x1, y1) {
 		var ctx, x0, x1, y0, y1;
 		ctx = this;
-		return new CanvasGradient.ptr(ctx.Object.createLinearGradient(x0, y0, x1, y1));
+		ctx.Object.createLinearGradient(x0, y0, x1, y1);
 	};
 	CanvasRenderingContext2D.prototype.CreateLinearGradient = function(x0, y0, x1, y1) { return this.$val.CreateLinearGradient(x0, y0, x1, y1); };
 	CanvasRenderingContext2D.ptr.prototype.CreateRadialGradient = function(x0, y0, r0, x1, y1, r1) {
 		var ctx, r0, r1, x0, x1, y0, y1;
 		ctx = this;
-		return new CanvasGradient.ptr(ctx.Object.createRadialGradient(x0, y0, r0, x1, y1, r1));
+		ctx.Object.createRadialGradient(x0, y0, r0, x1, y1, r1);
 	};
 	CanvasRenderingContext2D.prototype.CreateRadialGradient = function(x0, y0, r0, x1, y1, r1) { return this.$val.CreateRadialGradient(x0, y0, r0, x1, y1, r1); };
 	CanvasRenderingContext2D.ptr.prototype.CreatePattern = function(image, repetition) {
 		var ctx, image, repetition;
 		ctx = this;
-		return new CanvasPattern.ptr(ctx.Object.createPattern($externalize(image, Element), $externalize(repetition, $String)));
+		ctx.Object.createPattern($externalize(image, ptrType$13), $externalize(repetition, $String));
 	};
 	CanvasRenderingContext2D.prototype.CreatePattern = function(image, repetition) { return this.$val.CreatePattern(image, repetition); };
 	CanvasRenderingContext2D.ptr.prototype.BeginPath = function() {
@@ -33912,19 +33889,19 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	CanvasRenderingContext2D.ptr.prototype.DrawImage = function(image, dx, dy) {
 		var ctx, dx, dy, image;
 		ctx = this;
-		ctx.Object.drawImage($externalize(image, Element), dx, dy);
+		ctx.Object.drawImage($externalize(image, ptrType$13), dx, dy);
 	};
 	CanvasRenderingContext2D.prototype.DrawImage = function(image, dx, dy) { return this.$val.DrawImage(image, dx, dy); };
 	CanvasRenderingContext2D.ptr.prototype.DrawImageWithDst = function(image, dx, dy, dWidth, dHeight) {
 		var ctx, dHeight, dWidth, dx, dy, image;
 		ctx = this;
-		ctx.Object.drawImage($externalize(image, Element), dx, dy, dWidth, dHeight);
+		ctx.Object.drawImage($externalize(image, ptrType$13), dx, dy, dWidth, dHeight);
 	};
 	CanvasRenderingContext2D.prototype.DrawImageWithDst = function(image, dx, dy, dWidth, dHeight) { return this.$val.DrawImageWithDst(image, dx, dy, dWidth, dHeight); };
 	CanvasRenderingContext2D.ptr.prototype.DrawImageWithSrcAndDst = function(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight) {
 		var ctx, dHeight, dWidth, dx, dy, image, sHeight, sWidth, sx, sy;
 		ctx = this;
-		ctx.Object.drawImage($externalize(image, Element), sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
+		ctx.Object.drawImage($externalize(image, ptrType$13), sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
 	};
 	CanvasRenderingContext2D.prototype.DrawImageWithSrcAndDst = function(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight) { return this.$val.DrawImageWithSrcAndDst(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight); };
 	CanvasRenderingContext2D.ptr.prototype.CreateImageData = function(width, height) {
@@ -33942,13 +33919,13 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	CanvasRenderingContext2D.ptr.prototype.PutImageData = function(imageData, dx, dy) {
 		var ctx, dx, dy, imageData;
 		ctx = this;
-		ctx.Object.putImageData($externalize(imageData, ptrType$13), dx, dy);
+		ctx.Object.putImageData($externalize(imageData, ptrType$14), dx, dy);
 	};
 	CanvasRenderingContext2D.prototype.PutImageData = function(imageData, dx, dy) { return this.$val.PutImageData(imageData, dx, dy); };
 	CanvasRenderingContext2D.ptr.prototype.PutImageDataDirty = function(imageData, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight) {
 		var ctx, dirtyHeight, dirtyWidth, dirtyX, dirtyY, dx, dy, imageData;
 		ctx = this;
-		ctx.Object.putImageData($externalize(imageData, ptrType$13), dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight);
+		ctx.Object.putImageData($externalize(imageData, ptrType$14), dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight);
 	};
 	CanvasRenderingContext2D.prototype.PutImageDataDirty = function(imageData, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight) { return this.$val.PutImageDataDirty(imageData, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight); };
 	CanvasRenderingContext2D.ptr.prototype.Save = function() {
@@ -34068,9 +34045,9 @@ $packages["honnef.co/go/js/dom"] = (function() {
 		e = this;
 		list = wrapHTMLElement(e.BasicHTMLElement.BasicElement.BasicNode.Object.list);
 		if ($interfaceIsEqual(list, $ifaceNil)) {
-			return ptrType$15.nil;
+			return ptrType$16.nil;
 		}
-		return $assertType(list, ptrType$15);
+		return $assertType(list, ptrType$16);
 	};
 	HTMLInputElement.prototype.List = function() { return this.$val.List(); };
 	HTMLInputElement.ptr.prototype.Labels = function() {
@@ -34204,7 +34181,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 			if (!(_i < _ref.$length)) { break; }
 			i = _i;
 			area = ((_i < 0 || _i >= _ref.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref.$array[_ref.$offset + _i]);
-			((i < 0 || i >= out.$length) ? ($throwRuntimeError("index out of range"), undefined) : out.$array[out.$offset + i] = $assertType(area, ptrType$16));
+			((i < 0 || i >= out.$length) ? ($throwRuntimeError("index out of range"), undefined) : out.$array[out.$offset + i] = $assertType(area, ptrType$17));
 			_i++;
 		}
 		return out;
@@ -34391,7 +34368,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 			if (!(_i < _ref.$length)) { break; }
 			i = _i;
 			cell = ((_i < 0 || _i >= _ref.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref.$array[_ref.$offset + _i]);
-			((i < 0 || i >= out.$length) ? ($throwRuntimeError("index out of range"), undefined) : out.$array[out.$offset + i] = $assertType(cell, ptrType$17));
+			((i < 0 || i >= out.$length) ? ($throwRuntimeError("index out of range"), undefined) : out.$array[out.$offset + i] = $assertType(cell, ptrType$18));
 			_i++;
 		}
 		return out;
@@ -34400,7 +34377,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	HTMLTableRowElement.ptr.prototype.InsertCell = function(index) {
 		var e, index;
 		e = this;
-		return $assertType(wrapHTMLElement(e.BasicHTMLElement.BasicElement.BasicNode.Object.insertCell(index)), ptrType$17);
+		return $assertType(wrapHTMLElement(e.BasicHTMLElement.BasicElement.BasicNode.Object.insertCell(index)), ptrType$18);
 	};
 	HTMLTableRowElement.prototype.InsertCell = function(index) { return this.$val.InsertCell(index); };
 	HTMLTableRowElement.ptr.prototype.DeleteCell = function(index) {
@@ -34420,7 +34397,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 			if (!(_i < _ref.$length)) { break; }
 			i = _i;
 			row = ((_i < 0 || _i >= _ref.$length) ? ($throwRuntimeError("index out of range"), undefined) : _ref.$array[_ref.$offset + _i]);
-			((i < 0 || i >= out.$length) ? ($throwRuntimeError("index out of range"), undefined) : out.$array[out.$offset + i] = $assertType(row, ptrType$18));
+			((i < 0 || i >= out.$length) ? ($throwRuntimeError("index out of range"), undefined) : out.$array[out.$offset + i] = $assertType(row, ptrType$19));
 			_i++;
 		}
 		return out;
@@ -34435,7 +34412,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	HTMLTableSectionElement.ptr.prototype.InsertRow = function(index) {
 		var e, index;
 		e = this;
-		return $assertType(wrapHTMLElement(e.BasicHTMLElement.BasicElement.BasicNode.Object.insertRow(index)), ptrType$18);
+		return $assertType(wrapHTMLElement(e.BasicHTMLElement.BasicElement.BasicNode.Object.insertRow(index)), ptrType$19);
 	};
 	HTMLTableSectionElement.prototype.InsertRow = function(index) { return this.$val.InsertRow(index); };
 	HTMLTextAreaElement.ptr.prototype.Form = function() {
@@ -34745,59 +34722,58 @@ $packages["honnef.co/go/js/dom"] = (function() {
 		return !!(ev.UIEvent.BasicEvent.Object.getModifierState($externalize(mod, $String)));
 	};
 	MouseEvent.prototype.ModifierState = function(mod) { return this.$val.ModifierState(mod); };
-	ptrType$21.methods = [{prop: "Item", name: "Item", pkg: "", typ: $funcType([$Int], [$String], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "Add", name: "Add", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Remove", name: "Remove", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Toggle", name: "Toggle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Slice", name: "Slice", pkg: "", typ: $funcType([], [sliceType$7], false)}, {prop: "SetString", name: "SetString", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Set", name: "Set", pkg: "", typ: $funcType([sliceType$7], [], false)}];
+	ptrType$22.methods = [{prop: "Item", name: "Item", pkg: "", typ: $funcType([$Int], [$String], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "Add", name: "Add", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Remove", name: "Remove", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Toggle", name: "Toggle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "String", name: "String", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Slice", name: "Slice", pkg: "", typ: $funcType([], [sliceType$7], false)}, {prop: "SetString", name: "SetString", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Set", name: "Set", pkg: "", typ: $funcType([sliceType$7], [], false)}];
 	documentFragment.methods = [{prop: "GetElementByID", name: "GetElementByID", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType$3], false)}];
 	document.methods = [{prop: "Async", name: "Async", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetAsync", name: "SetAsync", pkg: "", typ: $funcType([$Bool], [], false)}, {prop: "Doctype", name: "Doctype", pkg: "", typ: $funcType([], [DocumentType], false)}, {prop: "DocumentElement", name: "DocumentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "DocumentURI", name: "DocumentURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Implementation", name: "Implementation", pkg: "", typ: $funcType([], [DOMImplementation], false)}, {prop: "LastStyleSheetSet", name: "LastStyleSheetSet", pkg: "", typ: $funcType([], [$String], false)}, {prop: "PreferredStyleSheetSet", name: "PreferredStyleSheetSet", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SelectedStyleSheetSet", name: "SelectedStyleSheetSet", pkg: "", typ: $funcType([], [$String], false)}, {prop: "StyleSheets", name: "StyleSheets", pkg: "", typ: $funcType([], [sliceType$17], false)}, {prop: "StyleSheetSets", name: "StyleSheetSets", pkg: "", typ: $funcType([], [sliceType$17], false)}, {prop: "AdoptNode", name: "AdoptNode", pkg: "", typ: $funcType([Node], [Node], false)}, {prop: "ImportNode", name: "ImportNode", pkg: "", typ: $funcType([Node, $Bool], [Node], false)}, {prop: "CreateDocumentFragment", name: "CreateDocumentFragment", pkg: "", typ: $funcType([], [DocumentFragment], false)}, {prop: "CreateElement", name: "CreateElement", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "CreateElementNS", name: "CreateElementNS", pkg: "", typ: $funcType([$String, $String], [Element], false)}, {prop: "CreateTextNode", name: "CreateTextNode", pkg: "", typ: $funcType([$String], [ptrType$12], false)}, {prop: "ElementFromPoint", name: "ElementFromPoint", pkg: "", typ: $funcType([$Int, $Int], [Element], false)}, {prop: "EnableStyleSheetsForSet", name: "EnableStyleSheetsForSet", pkg: "", typ: $funcType([$String], [], false)}, {prop: "GetElementsByClassName", name: "GetElementsByClassName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagName", name: "GetElementsByTagName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagNameNS", name: "GetElementsByTagNameNS", pkg: "", typ: $funcType([$String, $String], [sliceType$3], false)}, {prop: "GetElementByID", name: "GetElementByID", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType$3], false)}];
-	ptrType$25.methods = [{prop: "ActiveElement", name: "ActiveElement", pkg: "", typ: $funcType([], [HTMLElement], false)}, {prop: "Body", name: "Body", pkg: "", typ: $funcType([], [HTMLElement], false)}, {prop: "Cookie", name: "Cookie", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetCookie", name: "SetCookie", pkg: "", typ: $funcType([$String], [], false)}, {prop: "DefaultView", name: "DefaultView", pkg: "", typ: $funcType([], [Window], false)}, {prop: "DesignMode", name: "DesignMode", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetDesignMode", name: "SetDesignMode", pkg: "", typ: $funcType([$Bool], [], false)}, {prop: "Domain", name: "Domain", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetDomain", name: "SetDomain", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Forms", name: "Forms", pkg: "", typ: $funcType([], [sliceType$8], false)}, {prop: "Head", name: "Head", pkg: "", typ: $funcType([], [ptrType$8], false)}, {prop: "Images", name: "Images", pkg: "", typ: $funcType([], [sliceType$9], false)}, {prop: "LastModified", name: "LastModified", pkg: "", typ: $funcType([], [time.Time], false)}, {prop: "Links", name: "Links", pkg: "", typ: $funcType([], [sliceType$4], false)}, {prop: "Location", name: "Location", pkg: "", typ: $funcType([], [ptrType$22], false)}, {prop: "Plugins", name: "Plugins", pkg: "", typ: $funcType([], [sliceType$10], false)}, {prop: "ReadyState", name: "ReadyState", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Referrer", name: "Referrer", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Scripts", name: "Scripts", pkg: "", typ: $funcType([], [sliceType$11], false)}, {prop: "Title", name: "Title", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTitle", name: "SetTitle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "URL", name: "URL", pkg: "", typ: $funcType([], [$String], false)}];
-	ptrType$29.methods = [{prop: "Console", name: "Console", pkg: "", typ: $funcType([], [ptrType$27], false)}, {prop: "Document", name: "Document", pkg: "", typ: $funcType([], [Document], false)}, {prop: "FrameElement", name: "FrameElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "Location", name: "Location", pkg: "", typ: $funcType([], [ptrType$22], false)}, {prop: "Name", name: "Name", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetName", name: "SetName", pkg: "", typ: $funcType([$String], [], false)}, {prop: "InnerHeight", name: "InnerHeight", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "InnerWidth", name: "InnerWidth", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Length", name: "Length", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Opener", name: "Opener", pkg: "", typ: $funcType([], [Window], false)}, {prop: "OuterHeight", name: "OuterHeight", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "OuterWidth", name: "OuterWidth", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollX", name: "ScrollX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollY", name: "ScrollY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Parent", name: "Parent", pkg: "", typ: $funcType([], [Window], false)}, {prop: "ScreenX", name: "ScreenX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScreenY", name: "ScreenY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollMaxX", name: "ScrollMaxX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollMaxY", name: "ScrollMaxY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Top", name: "Top", pkg: "", typ: $funcType([], [Window], false)}, {prop: "History", name: "History", pkg: "", typ: $funcType([], [History], false)}, {prop: "Navigator", name: "Navigator", pkg: "", typ: $funcType([], [Navigator], false)}, {prop: "Screen", name: "Screen", pkg: "", typ: $funcType([], [ptrType$28], false)}, {prop: "Alert", name: "Alert", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Back", name: "Back", pkg: "", typ: $funcType([], [], false)}, {prop: "Blur", name: "Blur", pkg: "", typ: $funcType([], [], false)}, {prop: "ClearInterval", name: "ClearInterval", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ClearTimeout", name: "ClearTimeout", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "Close", name: "Close", pkg: "", typ: $funcType([], [], false)}, {prop: "Confirm", name: "Confirm", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "Focus", name: "Focus", pkg: "", typ: $funcType([], [], false)}, {prop: "Forward", name: "Forward", pkg: "", typ: $funcType([], [], false)}, {prop: "GetComputedStyle", name: "GetComputedStyle", pkg: "", typ: $funcType([Element, $String], [ptrType$26], false)}, {prop: "GetSelection", name: "GetSelection", pkg: "", typ: $funcType([], [Selection], false)}, {prop: "Home", name: "Home", pkg: "", typ: $funcType([], [], false)}, {prop: "MoveBy", name: "MoveBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "MoveTo", name: "MoveTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Open", name: "Open", pkg: "", typ: $funcType([$String, $String, $String], [Window], false)}, {prop: "OpenDialog", name: "OpenDialog", pkg: "", typ: $funcType([$String, $String, $String, sliceType], [Window], false)}, {prop: "PostMessage", name: "PostMessage", pkg: "", typ: $funcType([$String, $String, sliceType], [], false)}, {prop: "Print", name: "Print", pkg: "", typ: $funcType([], [], false)}, {prop: "Prompt", name: "Prompt", pkg: "", typ: $funcType([$String, $String], [$String], false)}, {prop: "ResizeBy", name: "ResizeBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ResizeTo", name: "ResizeTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Scroll", name: "Scroll", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ScrollBy", name: "ScrollBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ScrollByLines", name: "ScrollByLines", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ScrollTo", name: "ScrollTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "SetCursor", name: "SetCursor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetInterval", name: "SetInterval", pkg: "", typ: $funcType([funcType, $Int], [$Int], false)}, {prop: "SetTimeout", name: "SetTimeout", pkg: "", typ: $funcType([funcType, $Int], [$Int], false)}, {prop: "Stop", name: "Stop", pkg: "", typ: $funcType([], [], false)}, {prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "RequestAnimationFrame", name: "RequestAnimationFrame", pkg: "", typ: $funcType([funcType$3], [$Int], false)}, {prop: "CancelAnimationFrame", name: "CancelAnimationFrame", pkg: "", typ: $funcType([$Int], [], false)}];
-	ptrType$30.methods = [{prop: "Error", name: "Error", pkg: "", typ: $funcType([], [$String], false)}];
-	ptrType$23.methods = [{prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "BaseURI", name: "BaseURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "ChildNodes", name: "ChildNodes", pkg: "", typ: $funcType([], [sliceType$2], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NodeName", name: "NodeName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NodeType", name: "NodeType", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "NodeValue", name: "NodeValue", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetNodeValue", name: "SetNodeValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OwnerDocument", name: "OwnerDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [Node], false)}, {prop: "ParentElement", name: "ParentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "PreviousSibling", name: "PreviousSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "CloneNode", name: "CloneNode", pkg: "", typ: $funcType([$Bool], [Node], false)}, {prop: "CompareDocumentPosition", name: "CompareDocumentPosition", pkg: "", typ: $funcType([Node], [$Int], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "IsDefaultNamespace", name: "IsDefaultNamespace", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "IsEqualNode", name: "IsEqualNode", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "LookupPrefix", name: "LookupPrefix", pkg: "", typ: $funcType([], [$String], false)}, {prop: "LookupNamespaceURI", name: "LookupNamespaceURI", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "Normalize", name: "Normalize", pkg: "", typ: $funcType([], [], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "ReplaceChild", name: "ReplaceChild", pkg: "", typ: $funcType([Node, Node], [], false)}];
-	ptrType$1.methods = [{prop: "AccessKey", name: "AccessKey", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Dataset", name: "Dataset", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "SetAccessKey", name: "SetAccessKey", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AccessKeyLabel", name: "AccessKeyLabel", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAccessKeyLabel", name: "SetAccessKeyLabel", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ContentEditable", name: "ContentEditable", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetContentEditable", name: "SetContentEditable", pkg: "", typ: $funcType([$String], [], false)}, {prop: "IsContentEditable", name: "IsContentEditable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Dir", name: "Dir", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetDir", name: "SetDir", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Draggable", name: "Draggable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetDraggable", name: "SetDraggable", pkg: "", typ: $funcType([$Bool], [], false)}, {prop: "Lang", name: "Lang", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetLang", name: "SetLang", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OffsetHeight", name: "OffsetHeight", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetLeft", name: "OffsetLeft", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetParent", name: "OffsetParent", pkg: "", typ: $funcType([], [HTMLElement], false)}, {prop: "OffsetTop", name: "OffsetTop", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetWidth", name: "OffsetWidth", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "Style", name: "Style", pkg: "", typ: $funcType([], [ptrType$26], false)}, {prop: "TabIndex", name: "TabIndex", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "SetTabIndex", name: "SetTabIndex", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "Title", name: "Title", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTitle", name: "SetTitle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Blur", name: "Blur", pkg: "", typ: $funcType([], [], false)}, {prop: "Click", name: "Click", pkg: "", typ: $funcType([], [], false)}, {prop: "Focus", name: "Focus", pkg: "", typ: $funcType([], [], false)}];
-	ptrType$32.methods = [{prop: "Attributes", name: "Attributes", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "GetBoundingClientRect", name: "GetBoundingClientRect", pkg: "", typ: $funcType([], [ClientRect], false)}, {prop: "PreviousElementSibling", name: "PreviousElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "NextElementSibling", name: "NextElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "Class", name: "Class", pkg: "", typ: $funcType([], [ptrType$21], false)}, {prop: "SetClass", name: "SetClass", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ID", name: "ID", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetID", name: "SetID", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TagName", name: "TagName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "GetAttribute", name: "GetAttribute", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "GetAttributeNS", name: "GetAttributeNS", pkg: "", typ: $funcType([$String, $String], [$String], false)}, {prop: "GetElementsByClassName", name: "GetElementsByClassName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagName", name: "GetElementsByTagName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagNameNS", name: "GetElementsByTagNameNS", pkg: "", typ: $funcType([$String, $String], [sliceType$3], false)}, {prop: "HasAttribute", name: "HasAttribute", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "HasAttributeNS", name: "HasAttributeNS", pkg: "", typ: $funcType([$String, $String], [$Bool], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "RemoveAttribute", name: "RemoveAttribute", pkg: "", typ: $funcType([$String], [], false)}, {prop: "RemoveAttributeNS", name: "RemoveAttributeNS", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "SetAttribute", name: "SetAttribute", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "SetAttributeNS", name: "SetAttributeNS", pkg: "", typ: $funcType([$String, $String, $String], [], false)}, {prop: "InnerHTML", name: "InnerHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetInnerHTML", name: "SetInnerHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OuterHTML", name: "OuterHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOuterHTML", name: "SetOuterHTML", pkg: "", typ: $funcType([$String], [], false)}];
-	ptrType$33.methods = [{prop: "Rel", name: "Rel", pkg: "", typ: $funcType([], [ptrType$21], false)}];
-	ptrType$34.methods = [{prop: "Rel", name: "Rel", pkg: "", typ: $funcType([], [ptrType$21], false)}];
-	ptrType$16.methods = [{prop: "Rel", name: "Rel", pkg: "", typ: $funcType([], [ptrType$21], false)}];
-	ptrType$35.methods = [{prop: "Href", name: "Href", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Target", name: "Target", pkg: "", typ: $funcType([], [$String], false)}];
-	ptrType$37.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$36], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
-	ptrType$39.methods = [{prop: "GetContext2d", name: "GetContext2d", pkg: "", typ: $funcType([], [ptrType$38], false)}, {prop: "GetContext", name: "GetContext", pkg: "", typ: $funcType([$String], [ptrType], false)}];
-	ptrType$38.methods = [{prop: "ClearRect", name: "ClearRect", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "FillRect", name: "FillRect", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "StrokeRect", name: "StrokeRect", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "FillText", name: "FillText", pkg: "", typ: $funcType([$String, $Float64, $Float64, $Float64], [], false)}, {prop: "StrokeText", name: "StrokeText", pkg: "", typ: $funcType([$String, $Float64, $Float64, $Float64], [], false)}, {prop: "MeasureText", name: "MeasureText", pkg: "", typ: $funcType([$String], [ptrType$40], false)}, {prop: "GetLineDash", name: "GetLineDash", pkg: "", typ: $funcType([], [sliceType$12], false)}, {prop: "SetLineDash", name: "SetLineDash", pkg: "", typ: $funcType([sliceType$12], [], false)}, {prop: "CreateLinearGradient", name: "CreateLinearGradient", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [ptrType$41], false)}, {prop: "CreateRadialGradient", name: "CreateRadialGradient", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Float64], [ptrType$41], false)}, {prop: "CreatePattern", name: "CreatePattern", pkg: "", typ: $funcType([Element, $String], [ptrType$42], false)}, {prop: "BeginPath", name: "BeginPath", pkg: "", typ: $funcType([], [], false)}, {prop: "ClosePath", name: "ClosePath", pkg: "", typ: $funcType([], [], false)}, {prop: "MoveTo", name: "MoveTo", pkg: "", typ: $funcType([$Float64, $Float64], [], false)}, {prop: "LineTo", name: "LineTo", pkg: "", typ: $funcType([$Float64, $Float64], [], false)}, {prop: "BezierCurveTo", name: "BezierCurveTo", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "QuadraticCurveTo", name: "QuadraticCurveTo", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "Arc", name: "Arc", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Bool], [], false)}, {prop: "ArcTo", name: "ArcTo", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "Ellipse", name: "Ellipse", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Float64, $Float64, $Bool], [], false)}, {prop: "Rect", name: "Rect", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "Fill", name: "Fill", pkg: "", typ: $funcType([], [], false)}, {prop: "Stroke", name: "Stroke", pkg: "", typ: $funcType([], [], false)}, {prop: "DrawFocusIfNeeded", name: "DrawFocusIfNeeded", pkg: "", typ: $funcType([HTMLElement, ptrType], [], false)}, {prop: "ScrollPathIntoView", name: "ScrollPathIntoView", pkg: "", typ: $funcType([ptrType], [], false)}, {prop: "Clip", name: "Clip", pkg: "", typ: $funcType([], [], false)}, {prop: "IsPointInPath", name: "IsPointInPath", pkg: "", typ: $funcType([$Float64, $Float64], [$Bool], false)}, {prop: "IsPointInStroke", name: "IsPointInStroke", pkg: "", typ: $funcType([ptrType, $Float64, $Float64], [$Bool], false)}, {prop: "Rotate", name: "Rotate", pkg: "", typ: $funcType([$Float64], [], false)}, {prop: "Scale", name: "Scale", pkg: "", typ: $funcType([$Float64, $Float64], [], false)}, {prop: "Translate", name: "Translate", pkg: "", typ: $funcType([$Float64, $Float64], [], false)}, {prop: "Transform", name: "Transform", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "SetTransform", name: "SetTransform", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "ResetTransform", name: "ResetTransform", pkg: "", typ: $funcType([], [], false)}, {prop: "DrawImage", name: "DrawImage", pkg: "", typ: $funcType([Element, $Float64, $Float64], [], false)}, {prop: "DrawImageWithDst", name: "DrawImageWithDst", pkg: "", typ: $funcType([Element, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "DrawImageWithSrcAndDst", name: "DrawImageWithSrcAndDst", pkg: "", typ: $funcType([Element, $Float64, $Float64, $Float64, $Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "CreateImageData", name: "CreateImageData", pkg: "", typ: $funcType([$Int, $Int], [ptrType$13], false)}, {prop: "GetImageData", name: "GetImageData", pkg: "", typ: $funcType([$Int, $Int, $Int, $Int], [ptrType$13], false)}, {prop: "PutImageData", name: "PutImageData", pkg: "", typ: $funcType([ptrType$13, $Float64, $Float64], [], false)}, {prop: "PutImageDataDirty", name: "PutImageDataDirty", pkg: "", typ: $funcType([ptrType$13, $Float64, $Float64, $Int, $Int, $Int, $Int], [], false)}, {prop: "Save", name: "Save", pkg: "", typ: $funcType([], [], false)}, {prop: "Restore", name: "Restore", pkg: "", typ: $funcType([], [], false)}];
-	ptrType$13.methods = [{prop: "At", name: "At", pkg: "", typ: $funcType([$Int, $Int], [ptrType$43], false)}, {prop: "Set", name: "Set", pkg: "", typ: $funcType([$Int, $Int, color.RGBA], [], false)}];
-	ptrType$41.methods = [{prop: "AddColorStop", name: "AddColorStop", pkg: "", typ: $funcType([$Float64, $String], [], false)}];
-	ptrType$15.methods = [{prop: "Options", name: "Options", pkg: "", typ: $funcType([], [sliceType$6], false)}];
-	ptrType$44.methods = [{prop: "Elements", name: "Elements", pkg: "", typ: $funcType([], [sliceType$4], false)}, {prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$36], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
+	ptrType$26.methods = [{prop: "ActiveElement", name: "ActiveElement", pkg: "", typ: $funcType([], [HTMLElement], false)}, {prop: "Body", name: "Body", pkg: "", typ: $funcType([], [HTMLElement], false)}, {prop: "Cookie", name: "Cookie", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetCookie", name: "SetCookie", pkg: "", typ: $funcType([$String], [], false)}, {prop: "DefaultView", name: "DefaultView", pkg: "", typ: $funcType([], [Window], false)}, {prop: "DesignMode", name: "DesignMode", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetDesignMode", name: "SetDesignMode", pkg: "", typ: $funcType([$Bool], [], false)}, {prop: "Domain", name: "Domain", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetDomain", name: "SetDomain", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Forms", name: "Forms", pkg: "", typ: $funcType([], [sliceType$8], false)}, {prop: "Head", name: "Head", pkg: "", typ: $funcType([], [ptrType$8], false)}, {prop: "Images", name: "Images", pkg: "", typ: $funcType([], [sliceType$9], false)}, {prop: "LastModified", name: "LastModified", pkg: "", typ: $funcType([], [time.Time], false)}, {prop: "Links", name: "Links", pkg: "", typ: $funcType([], [sliceType$4], false)}, {prop: "Location", name: "Location", pkg: "", typ: $funcType([], [ptrType$23], false)}, {prop: "Plugins", name: "Plugins", pkg: "", typ: $funcType([], [sliceType$10], false)}, {prop: "ReadyState", name: "ReadyState", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Referrer", name: "Referrer", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Scripts", name: "Scripts", pkg: "", typ: $funcType([], [sliceType$11], false)}, {prop: "Title", name: "Title", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTitle", name: "SetTitle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "URL", name: "URL", pkg: "", typ: $funcType([], [$String], false)}];
+	ptrType$30.methods = [{prop: "Console", name: "Console", pkg: "", typ: $funcType([], [ptrType$28], false)}, {prop: "Document", name: "Document", pkg: "", typ: $funcType([], [Document], false)}, {prop: "FrameElement", name: "FrameElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "Location", name: "Location", pkg: "", typ: $funcType([], [ptrType$23], false)}, {prop: "Name", name: "Name", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetName", name: "SetName", pkg: "", typ: $funcType([$String], [], false)}, {prop: "InnerHeight", name: "InnerHeight", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "InnerWidth", name: "InnerWidth", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Length", name: "Length", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Opener", name: "Opener", pkg: "", typ: $funcType([], [Window], false)}, {prop: "OuterHeight", name: "OuterHeight", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "OuterWidth", name: "OuterWidth", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollX", name: "ScrollX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollY", name: "ScrollY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Parent", name: "Parent", pkg: "", typ: $funcType([], [Window], false)}, {prop: "ScreenX", name: "ScreenX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScreenY", name: "ScreenY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollMaxX", name: "ScrollMaxX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollMaxY", name: "ScrollMaxY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Top", name: "Top", pkg: "", typ: $funcType([], [Window], false)}, {prop: "History", name: "History", pkg: "", typ: $funcType([], [History], false)}, {prop: "Navigator", name: "Navigator", pkg: "", typ: $funcType([], [Navigator], false)}, {prop: "Screen", name: "Screen", pkg: "", typ: $funcType([], [ptrType$29], false)}, {prop: "Alert", name: "Alert", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Back", name: "Back", pkg: "", typ: $funcType([], [], false)}, {prop: "Blur", name: "Blur", pkg: "", typ: $funcType([], [], false)}, {prop: "ClearInterval", name: "ClearInterval", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ClearTimeout", name: "ClearTimeout", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "Close", name: "Close", pkg: "", typ: $funcType([], [], false)}, {prop: "Confirm", name: "Confirm", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "Focus", name: "Focus", pkg: "", typ: $funcType([], [], false)}, {prop: "Forward", name: "Forward", pkg: "", typ: $funcType([], [], false)}, {prop: "GetComputedStyle", name: "GetComputedStyle", pkg: "", typ: $funcType([Element, $String], [ptrType$27], false)}, {prop: "GetSelection", name: "GetSelection", pkg: "", typ: $funcType([], [Selection], false)}, {prop: "Home", name: "Home", pkg: "", typ: $funcType([], [], false)}, {prop: "MoveBy", name: "MoveBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "MoveTo", name: "MoveTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Open", name: "Open", pkg: "", typ: $funcType([$String, $String, $String], [Window], false)}, {prop: "OpenDialog", name: "OpenDialog", pkg: "", typ: $funcType([$String, $String, $String, sliceType], [Window], false)}, {prop: "PostMessage", name: "PostMessage", pkg: "", typ: $funcType([$String, $String, sliceType], [], false)}, {prop: "Print", name: "Print", pkg: "", typ: $funcType([], [], false)}, {prop: "Prompt", name: "Prompt", pkg: "", typ: $funcType([$String, $String], [$String], false)}, {prop: "ResizeBy", name: "ResizeBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ResizeTo", name: "ResizeTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Scroll", name: "Scroll", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ScrollBy", name: "ScrollBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ScrollByLines", name: "ScrollByLines", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ScrollTo", name: "ScrollTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "SetCursor", name: "SetCursor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetInterval", name: "SetInterval", pkg: "", typ: $funcType([funcType, $Int], [$Int], false)}, {prop: "SetTimeout", name: "SetTimeout", pkg: "", typ: $funcType([funcType, $Int], [$Int], false)}, {prop: "Stop", name: "Stop", pkg: "", typ: $funcType([], [], false)}, {prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "RequestAnimationFrame", name: "RequestAnimationFrame", pkg: "", typ: $funcType([funcType$3], [$Int], false)}, {prop: "CancelAnimationFrame", name: "CancelAnimationFrame", pkg: "", typ: $funcType([$Int], [], false)}];
+	ptrType$31.methods = [{prop: "Error", name: "Error", pkg: "", typ: $funcType([], [$String], false)}];
+	ptrType$24.methods = [{prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}, {prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "BaseURI", name: "BaseURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "ChildNodes", name: "ChildNodes", pkg: "", typ: $funcType([], [sliceType$2], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NodeName", name: "NodeName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NodeType", name: "NodeType", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "NodeValue", name: "NodeValue", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetNodeValue", name: "SetNodeValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OwnerDocument", name: "OwnerDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [Node], false)}, {prop: "ParentElement", name: "ParentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "PreviousSibling", name: "PreviousSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "CloneNode", name: "CloneNode", pkg: "", typ: $funcType([$Bool], [Node], false)}, {prop: "CompareDocumentPosition", name: "CompareDocumentPosition", pkg: "", typ: $funcType([Node], [$Int], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "IsDefaultNamespace", name: "IsDefaultNamespace", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "IsEqualNode", name: "IsEqualNode", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "LookupPrefix", name: "LookupPrefix", pkg: "", typ: $funcType([], [$String], false)}, {prop: "LookupNamespaceURI", name: "LookupNamespaceURI", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "Normalize", name: "Normalize", pkg: "", typ: $funcType([], [], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "ReplaceChild", name: "ReplaceChild", pkg: "", typ: $funcType([Node, Node], [], false)}];
+	ptrType$1.methods = [{prop: "AccessKey", name: "AccessKey", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Dataset", name: "Dataset", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "SetAccessKey", name: "SetAccessKey", pkg: "", typ: $funcType([$String], [], false)}, {prop: "AccessKeyLabel", name: "AccessKeyLabel", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAccessKeyLabel", name: "SetAccessKeyLabel", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ContentEditable", name: "ContentEditable", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetContentEditable", name: "SetContentEditable", pkg: "", typ: $funcType([$String], [], false)}, {prop: "IsContentEditable", name: "IsContentEditable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Dir", name: "Dir", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetDir", name: "SetDir", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Draggable", name: "Draggable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetDraggable", name: "SetDraggable", pkg: "", typ: $funcType([$Bool], [], false)}, {prop: "Lang", name: "Lang", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetLang", name: "SetLang", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OffsetHeight", name: "OffsetHeight", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetLeft", name: "OffsetLeft", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetParent", name: "OffsetParent", pkg: "", typ: $funcType([], [HTMLElement], false)}, {prop: "OffsetTop", name: "OffsetTop", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetWidth", name: "OffsetWidth", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "Style", name: "Style", pkg: "", typ: $funcType([], [ptrType$27], false)}, {prop: "TabIndex", name: "TabIndex", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "SetTabIndex", name: "SetTabIndex", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "Title", name: "Title", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetTitle", name: "SetTitle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Blur", name: "Blur", pkg: "", typ: $funcType([], [], false)}, {prop: "Click", name: "Click", pkg: "", typ: $funcType([], [], false)}, {prop: "Focus", name: "Focus", pkg: "", typ: $funcType([], [], false)}];
+	ptrType$33.methods = [{prop: "Attributes", name: "Attributes", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "GetBoundingClientRect", name: "GetBoundingClientRect", pkg: "", typ: $funcType([], [ClientRect], false)}, {prop: "PreviousElementSibling", name: "PreviousElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "NextElementSibling", name: "NextElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "Class", name: "Class", pkg: "", typ: $funcType([], [ptrType$22], false)}, {prop: "SetClass", name: "SetClass", pkg: "", typ: $funcType([$String], [], false)}, {prop: "ID", name: "ID", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetID", name: "SetID", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TagName", name: "TagName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "GetAttribute", name: "GetAttribute", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "GetAttributeNS", name: "GetAttributeNS", pkg: "", typ: $funcType([$String, $String], [$String], false)}, {prop: "GetElementsByClassName", name: "GetElementsByClassName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagName", name: "GetElementsByTagName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagNameNS", name: "GetElementsByTagNameNS", pkg: "", typ: $funcType([$String, $String], [sliceType$3], false)}, {prop: "HasAttribute", name: "HasAttribute", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "HasAttributeNS", name: "HasAttributeNS", pkg: "", typ: $funcType([$String, $String], [$Bool], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "RemoveAttribute", name: "RemoveAttribute", pkg: "", typ: $funcType([$String], [], false)}, {prop: "RemoveAttributeNS", name: "RemoveAttributeNS", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "SetAttribute", name: "SetAttribute", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "SetAttributeNS", name: "SetAttributeNS", pkg: "", typ: $funcType([$String, $String, $String], [], false)}, {prop: "InnerHTML", name: "InnerHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetInnerHTML", name: "SetInnerHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "OuterHTML", name: "OuterHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetOuterHTML", name: "SetOuterHTML", pkg: "", typ: $funcType([$String], [], false)}];
+	ptrType$34.methods = [{prop: "Rel", name: "Rel", pkg: "", typ: $funcType([], [ptrType$22], false)}];
+	ptrType$35.methods = [{prop: "Rel", name: "Rel", pkg: "", typ: $funcType([], [ptrType$22], false)}];
+	ptrType$17.methods = [{prop: "Rel", name: "Rel", pkg: "", typ: $funcType([], [ptrType$22], false)}];
+	ptrType$36.methods = [{prop: "Href", name: "Href", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Target", name: "Target", pkg: "", typ: $funcType([], [$String], false)}];
+	ptrType$38.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$37], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
+	ptrType$40.methods = [{prop: "GetContext2d", name: "GetContext2d", pkg: "", typ: $funcType([], [ptrType$39], false)}, {prop: "GetContext", name: "GetContext", pkg: "", typ: $funcType([$String], [ptrType], false)}];
+	ptrType$39.methods = [{prop: "ClearRect", name: "ClearRect", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "FillRect", name: "FillRect", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "StrokeRect", name: "StrokeRect", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "FillText", name: "FillText", pkg: "", typ: $funcType([$String, $Float64, $Float64, $Float64], [], false)}, {prop: "StrokeText", name: "StrokeText", pkg: "", typ: $funcType([$String, $Float64, $Float64, $Float64], [], false)}, {prop: "MeasureText", name: "MeasureText", pkg: "", typ: $funcType([$String], [ptrType$41], false)}, {prop: "GetLineDash", name: "GetLineDash", pkg: "", typ: $funcType([], [sliceType$12], false)}, {prop: "SetLineDash", name: "SetLineDash", pkg: "", typ: $funcType([sliceType$12], [], false)}, {prop: "CreateLinearGradient", name: "CreateLinearGradient", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "CreateRadialGradient", name: "CreateRadialGradient", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "CreatePattern", name: "CreatePattern", pkg: "", typ: $funcType([ptrType$13, $String], [], false)}, {prop: "BeginPath", name: "BeginPath", pkg: "", typ: $funcType([], [], false)}, {prop: "ClosePath", name: "ClosePath", pkg: "", typ: $funcType([], [], false)}, {prop: "MoveTo", name: "MoveTo", pkg: "", typ: $funcType([$Float64, $Float64], [], false)}, {prop: "LineTo", name: "LineTo", pkg: "", typ: $funcType([$Float64, $Float64], [], false)}, {prop: "BezierCurveTo", name: "BezierCurveTo", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "QuadraticCurveTo", name: "QuadraticCurveTo", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "Arc", name: "Arc", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Bool], [], false)}, {prop: "ArcTo", name: "ArcTo", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "Ellipse", name: "Ellipse", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Float64, $Float64, $Bool], [], false)}, {prop: "Rect", name: "Rect", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "Fill", name: "Fill", pkg: "", typ: $funcType([], [], false)}, {prop: "Stroke", name: "Stroke", pkg: "", typ: $funcType([], [], false)}, {prop: "DrawFocusIfNeeded", name: "DrawFocusIfNeeded", pkg: "", typ: $funcType([HTMLElement, ptrType], [], false)}, {prop: "ScrollPathIntoView", name: "ScrollPathIntoView", pkg: "", typ: $funcType([ptrType], [], false)}, {prop: "Clip", name: "Clip", pkg: "", typ: $funcType([], [], false)}, {prop: "IsPointInPath", name: "IsPointInPath", pkg: "", typ: $funcType([$Float64, $Float64], [$Bool], false)}, {prop: "IsPointInStroke", name: "IsPointInStroke", pkg: "", typ: $funcType([ptrType, $Float64, $Float64], [$Bool], false)}, {prop: "Rotate", name: "Rotate", pkg: "", typ: $funcType([$Float64], [], false)}, {prop: "Scale", name: "Scale", pkg: "", typ: $funcType([$Float64, $Float64], [], false)}, {prop: "Translate", name: "Translate", pkg: "", typ: $funcType([$Float64, $Float64], [], false)}, {prop: "Transform", name: "Transform", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "SetTransform", name: "SetTransform", pkg: "", typ: $funcType([$Float64, $Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "ResetTransform", name: "ResetTransform", pkg: "", typ: $funcType([], [], false)}, {prop: "DrawImage", name: "DrawImage", pkg: "", typ: $funcType([ptrType$13, $Float64, $Float64], [], false)}, {prop: "DrawImageWithDst", name: "DrawImageWithDst", pkg: "", typ: $funcType([ptrType$13, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "DrawImageWithSrcAndDst", name: "DrawImageWithSrcAndDst", pkg: "", typ: $funcType([ptrType$13, $Float64, $Float64, $Float64, $Float64, $Float64, $Float64, $Float64, $Float64], [], false)}, {prop: "CreateImageData", name: "CreateImageData", pkg: "", typ: $funcType([$Int, $Int], [ptrType$14], false)}, {prop: "GetImageData", name: "GetImageData", pkg: "", typ: $funcType([$Int, $Int, $Int, $Int], [ptrType$14], false)}, {prop: "PutImageData", name: "PutImageData", pkg: "", typ: $funcType([ptrType$14, $Float64, $Float64], [], false)}, {prop: "PutImageDataDirty", name: "PutImageDataDirty", pkg: "", typ: $funcType([ptrType$14, $Float64, $Float64, $Int, $Int, $Int, $Int], [], false)}, {prop: "Save", name: "Save", pkg: "", typ: $funcType([], [], false)}, {prop: "Restore", name: "Restore", pkg: "", typ: $funcType([], [], false)}];
+	ptrType$14.methods = [{prop: "At", name: "At", pkg: "", typ: $funcType([$Int, $Int], [ptrType$42], false)}, {prop: "Set", name: "Set", pkg: "", typ: $funcType([$Int, $Int, color.RGBA], [], false)}];
+	ptrType$16.methods = [{prop: "Options", name: "Options", pkg: "", typ: $funcType([], [sliceType$6], false)}];
+	ptrType$43.methods = [{prop: "Elements", name: "Elements", pkg: "", typ: $funcType([], [sliceType$4], false)}, {prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$37], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
 	ptrType$5.methods = [{prop: "Elements", name: "Elements", pkg: "", typ: $funcType([], [sliceType$4], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Submit", name: "Submit", pkg: "", typ: $funcType([], [], false)}, {prop: "Reset", name: "Reset", pkg: "", typ: $funcType([], [], false)}, {prop: "Item", name: "Item", pkg: "", typ: $funcType([$Int], [HTMLElement], false)}, {prop: "NamedItem", name: "NamedItem", pkg: "", typ: $funcType([$String], [HTMLElement], false)}];
-	ptrType$45.methods = [{prop: "ContentDocument", name: "ContentDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ContentWindow", name: "ContentWindow", pkg: "", typ: $funcType([], [Window], false)}];
-	ptrType$46.methods = [{prop: "Files", name: "Files", pkg: "", typ: $funcType([], [sliceType$13], false)}, {prop: "List", name: "List", pkg: "", typ: $funcType([], [ptrType$15], false)}, {prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$36], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Select", name: "Select", pkg: "", typ: $funcType([], [], false)}, {prop: "SetSelectionRange", name: "SetSelectionRange", pkg: "", typ: $funcType([$Int, $Int, $String], [], false)}, {prop: "StepDown", name: "StepDown", pkg: "", typ: $funcType([$Int], [$error], false)}, {prop: "StepUp", name: "StepUp", pkg: "", typ: $funcType([$Int], [$error], false)}];
-	ptrType$47.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$36], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
+	ptrType$44.methods = [{prop: "ContentDocument", name: "ContentDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ContentWindow", name: "ContentWindow", pkg: "", typ: $funcType([], [Window], false)}];
+	ptrType$45.methods = [{prop: "Files", name: "Files", pkg: "", typ: $funcType([], [sliceType$13], false)}, {prop: "List", name: "List", pkg: "", typ: $funcType([], [ptrType$16], false)}, {prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$37], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Select", name: "Select", pkg: "", typ: $funcType([], [], false)}, {prop: "SetSelectionRange", name: "SetSelectionRange", pkg: "", typ: $funcType([$Int, $Int, $String], [], false)}, {prop: "StepDown", name: "StepDown", pkg: "", typ: $funcType([$Int], [$error], false)}, {prop: "StepUp", name: "StepUp", pkg: "", typ: $funcType([$Int], [$error], false)}];
+	ptrType$46.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$37], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
 	ptrType$6.methods = [{prop: "Control", name: "Control", pkg: "", typ: $funcType([], [HTMLElement], false)}, {prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}];
-	ptrType$48.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}];
-	ptrType$49.methods = [{prop: "Rel", name: "Rel", pkg: "", typ: $funcType([], [ptrType$21], false)}, {prop: "Sizes", name: "Sizes", pkg: "", typ: $funcType([], [ptrType$21], false)}, {prop: "Sheet", name: "Sheet", pkg: "", typ: $funcType([], [StyleSheet], false)}];
-	ptrType$50.methods = [{prop: "Areas", name: "Areas", pkg: "", typ: $funcType([], [sliceType$14], false)}, {prop: "Images", name: "Images", pkg: "", typ: $funcType([], [sliceType$4], false)}];
+	ptrType$47.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}];
+	ptrType$48.methods = [{prop: "Rel", name: "Rel", pkg: "", typ: $funcType([], [ptrType$22], false)}, {prop: "Sizes", name: "Sizes", pkg: "", typ: $funcType([], [ptrType$22], false)}, {prop: "Sheet", name: "Sheet", pkg: "", typ: $funcType([], [StyleSheet], false)}];
+	ptrType$49.methods = [{prop: "Areas", name: "Areas", pkg: "", typ: $funcType([], [sliceType$14], false)}, {prop: "Images", name: "Images", pkg: "", typ: $funcType([], [sliceType$4], false)}];
 	ptrType$3.methods = [{prop: "Play", name: "Play", pkg: "", typ: $funcType([], [], false)}, {prop: "Pause", name: "Pause", pkg: "", typ: $funcType([], [], false)}];
 	HTMLMeterElement.methods = [{prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}];
-	ptrType$51.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "ContentDocument", name: "ContentDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ContentWindow", name: "ContentWindow", pkg: "", typ: $funcType([], [Window], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$36], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
+	ptrType$50.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "ContentDocument", name: "ContentDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ContentWindow", name: "ContentWindow", pkg: "", typ: $funcType([], [Window], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$37], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
 	ptrType$7.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}];
-	ptrType$52.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$36], false)}, {prop: "For", name: "For", pkg: "", typ: $funcType([], [ptrType$21], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
+	ptrType$51.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$37], false)}, {prop: "For", name: "For", pkg: "", typ: $funcType([], [ptrType$22], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
 	HTMLProgressElement.methods = [{prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}];
-	ptrType$53.methods = [{prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Options", name: "Options", pkg: "", typ: $funcType([], [sliceType$6], false)}, {prop: "SelectedOptions", name: "SelectedOptions", pkg: "", typ: $funcType([], [sliceType$6], false)}, {prop: "Item", name: "Item", pkg: "", typ: $funcType([$Int], [ptrType$7], false)}, {prop: "NamedItem", name: "NamedItem", pkg: "", typ: $funcType([$String], [ptrType$7], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$36], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
-	ptrType$18.methods = [{prop: "Cells", name: "Cells", pkg: "", typ: $funcType([], [sliceType$15], false)}, {prop: "InsertCell", name: "InsertCell", pkg: "", typ: $funcType([$Int], [ptrType$17], false)}, {prop: "DeleteCell", name: "DeleteCell", pkg: "", typ: $funcType([$Int], [], false)}];
-	ptrType$54.methods = [{prop: "Rows", name: "Rows", pkg: "", typ: $funcType([], [sliceType$16], false)}, {prop: "DeleteRow", name: "DeleteRow", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "InsertRow", name: "InsertRow", pkg: "", typ: $funcType([$Int], [ptrType$18], false)}];
-	ptrType$55.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$36], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Select", name: "Select", pkg: "", typ: $funcType([], [], false)}, {prop: "SetSelectionRange", name: "SetSelectionRange", pkg: "", typ: $funcType([$Int, $Int, $String], [], false)}];
-	ptrType$57.methods = [{prop: "Track", name: "Track", pkg: "", typ: $funcType([], [ptrType$56], false)}];
-	ptrType$26.methods = [{prop: "ToMap", name: "ToMap", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "RemoveProperty", name: "RemoveProperty", pkg: "", typ: $funcType([$String], [], false)}, {prop: "GetPropertyValue", name: "GetPropertyValue", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "GetPropertyPriority", name: "GetPropertyPriority", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "SetProperty", name: "SetProperty", pkg: "", typ: $funcType([$String, $String, $String], [], false)}, {prop: "Index", name: "Index", pkg: "", typ: $funcType([$Int], [$String], false)}, {prop: "Length", name: "Length", pkg: "", typ: $funcType([], [$Int], false)}];
-	ptrType$19.methods = [{prop: "Bubbles", name: "Bubbles", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Cancelable", name: "Cancelable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "CurrentTarget", name: "CurrentTarget", pkg: "", typ: $funcType([], [Element], false)}, {prop: "DefaultPrevented", name: "DefaultPrevented", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "EventPhase", name: "EventPhase", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Target", name: "Target", pkg: "", typ: $funcType([], [Element], false)}, {prop: "Timestamp", name: "Timestamp", pkg: "", typ: $funcType([], [time.Time], false)}, {prop: "Type", name: "Type", pkg: "", typ: $funcType([], [$String], false)}, {prop: "PreventDefault", name: "PreventDefault", pkg: "", typ: $funcType([], [], false)}, {prop: "StopImmediatePropagation", name: "StopImmediatePropagation", pkg: "", typ: $funcType([], [], false)}, {prop: "StopPropagation", name: "StopPropagation", pkg: "", typ: $funcType([], [], false)}, {prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}];
-	ptrType$58.methods = [{prop: "ModifierState", name: "ModifierState", pkg: "", typ: $funcType([$String], [$Bool], false)}];
-	ptrType$59.methods = [{prop: "RelatedTarget", name: "RelatedTarget", pkg: "", typ: $funcType([], [Element], false)}, {prop: "ModifierState", name: "ModifierState", pkg: "", typ: $funcType([$String], [$Bool], false)}];
+	ptrType$52.methods = [{prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Options", name: "Options", pkg: "", typ: $funcType([], [sliceType$6], false)}, {prop: "SelectedOptions", name: "SelectedOptions", pkg: "", typ: $funcType([], [sliceType$6], false)}, {prop: "Item", name: "Item", pkg: "", typ: $funcType([$Int], [ptrType$7], false)}, {prop: "NamedItem", name: "NamedItem", pkg: "", typ: $funcType([$String], [ptrType$7], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$37], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}];
+	ptrType$19.methods = [{prop: "Cells", name: "Cells", pkg: "", typ: $funcType([], [sliceType$15], false)}, {prop: "InsertCell", name: "InsertCell", pkg: "", typ: $funcType([$Int], [ptrType$18], false)}, {prop: "DeleteCell", name: "DeleteCell", pkg: "", typ: $funcType([$Int], [], false)}];
+	ptrType$53.methods = [{prop: "Rows", name: "Rows", pkg: "", typ: $funcType([], [sliceType$16], false)}, {prop: "DeleteRow", name: "DeleteRow", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "InsertRow", name: "InsertRow", pkg: "", typ: $funcType([$Int], [ptrType$19], false)}];
+	ptrType$54.methods = [{prop: "Form", name: "Form", pkg: "", typ: $funcType([], [ptrType$5], false)}, {prop: "Labels", name: "Labels", pkg: "", typ: $funcType([], [sliceType$5], false)}, {prop: "Validity", name: "Validity", pkg: "", typ: $funcType([], [ptrType$37], false)}, {prop: "CheckValidity", name: "CheckValidity", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "SetCustomValidity", name: "SetCustomValidity", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Select", name: "Select", pkg: "", typ: $funcType([], [], false)}, {prop: "SetSelectionRange", name: "SetSelectionRange", pkg: "", typ: $funcType([$Int, $Int, $String], [], false)}];
+	ptrType$56.methods = [{prop: "Track", name: "Track", pkg: "", typ: $funcType([], [ptrType$55], false)}];
+	ptrType$27.methods = [{prop: "ToMap", name: "ToMap", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "RemoveProperty", name: "RemoveProperty", pkg: "", typ: $funcType([$String], [], false)}, {prop: "GetPropertyValue", name: "GetPropertyValue", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "GetPropertyPriority", name: "GetPropertyPriority", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "SetProperty", name: "SetProperty", pkg: "", typ: $funcType([$String, $String, $String], [], false)}, {prop: "Index", name: "Index", pkg: "", typ: $funcType([$Int], [$String], false)}, {prop: "Length", name: "Length", pkg: "", typ: $funcType([], [$Int], false)}];
+	ptrType$20.methods = [{prop: "Bubbles", name: "Bubbles", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Cancelable", name: "Cancelable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "CurrentTarget", name: "CurrentTarget", pkg: "", typ: $funcType([], [Element], false)}, {prop: "DefaultPrevented", name: "DefaultPrevented", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "EventPhase", name: "EventPhase", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Target", name: "Target", pkg: "", typ: $funcType([], [Element], false)}, {prop: "Timestamp", name: "Timestamp", pkg: "", typ: $funcType([], [time.Time], false)}, {prop: "Type", name: "Type", pkg: "", typ: $funcType([], [$String], false)}, {prop: "PreventDefault", name: "PreventDefault", pkg: "", typ: $funcType([], [], false)}, {prop: "StopImmediatePropagation", name: "StopImmediatePropagation", pkg: "", typ: $funcType([], [], false)}, {prop: "StopPropagation", name: "StopPropagation", pkg: "", typ: $funcType([], [], false)}, {prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}];
+	ptrType$57.methods = [{prop: "ModifierState", name: "ModifierState", pkg: "", typ: $funcType([$String], [$Bool], false)}];
+	ptrType$58.methods = [{prop: "RelatedTarget", name: "RelatedTarget", pkg: "", typ: $funcType([], [Element], false)}, {prop: "ModifierState", name: "ModifierState", pkg: "", typ: $funcType([$String], [$Bool], false)}];
 	TokenList.init("honnef.co/go/js/dom", [{prop: "dtl", name: "dtl", anonymous: false, exported: false, typ: ptrType, tag: ""}, {prop: "o", name: "o", anonymous: false, exported: false, typ: ptrType, tag: ""}, {prop: "sa", name: "sa", anonymous: false, exported: false, typ: $String, tag: ""}, {prop: "Length", name: "Length", anonymous: false, exported: true, typ: $Int, tag: "js:\"length\""}]);
 	Document.init([{prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "AdoptNode", name: "AdoptNode", pkg: "", typ: $funcType([Node], [Node], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "Async", name: "Async", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "BaseURI", name: "BaseURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "ChildNodes", name: "ChildNodes", pkg: "", typ: $funcType([], [sliceType$2], false)}, {prop: "CloneNode", name: "CloneNode", pkg: "", typ: $funcType([$Bool], [Node], false)}, {prop: "CompareDocumentPosition", name: "CompareDocumentPosition", pkg: "", typ: $funcType([Node], [$Int], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "CreateDocumentFragment", name: "CreateDocumentFragment", pkg: "", typ: $funcType([], [DocumentFragment], false)}, {prop: "CreateElement", name: "CreateElement", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "CreateElementNS", name: "CreateElementNS", pkg: "", typ: $funcType([$String, $String], [Element], false)}, {prop: "CreateTextNode", name: "CreateTextNode", pkg: "", typ: $funcType([$String], [ptrType$12], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "Doctype", name: "Doctype", pkg: "", typ: $funcType([], [DocumentType], false)}, {prop: "DocumentElement", name: "DocumentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "DocumentURI", name: "DocumentURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "ElementFromPoint", name: "ElementFromPoint", pkg: "", typ: $funcType([$Int, $Int], [Element], false)}, {prop: "EnableStyleSheetsForSet", name: "EnableStyleSheetsForSet", pkg: "", typ: $funcType([$String], [], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "GetElementByID", name: "GetElementByID", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "GetElementsByClassName", name: "GetElementsByClassName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagName", name: "GetElementsByTagName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagNameNS", name: "GetElementsByTagNameNS", pkg: "", typ: $funcType([$String, $String], [sliceType$3], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Implementation", name: "Implementation", pkg: "", typ: $funcType([], [DOMImplementation], false)}, {prop: "ImportNode", name: "ImportNode", pkg: "", typ: $funcType([Node, $Bool], [Node], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "IsDefaultNamespace", name: "IsDefaultNamespace", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "IsEqualNode", name: "IsEqualNode", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "LastStyleSheetSet", name: "LastStyleSheetSet", pkg: "", typ: $funcType([], [$String], false)}, {prop: "LookupNamespaceURI", name: "LookupNamespaceURI", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "LookupPrefix", name: "LookupPrefix", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NodeName", name: "NodeName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NodeType", name: "NodeType", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "NodeValue", name: "NodeValue", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Normalize", name: "Normalize", pkg: "", typ: $funcType([], [], false)}, {prop: "OwnerDocument", name: "OwnerDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ParentElement", name: "ParentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [Node], false)}, {prop: "PreferredStyleSheetSet", name: "PreferredStyleSheetSet", pkg: "", typ: $funcType([], [$String], false)}, {prop: "PreviousSibling", name: "PreviousSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "ReplaceChild", name: "ReplaceChild", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "SelectedStyleSheetSet", name: "SelectedStyleSheetSet", pkg: "", typ: $funcType([], [$String], false)}, {prop: "SetAsync", name: "SetAsync", pkg: "", typ: $funcType([$Bool], [], false)}, {prop: "SetNodeValue", name: "SetNodeValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "StyleSheetSets", name: "StyleSheetSets", pkg: "", typ: $funcType([], [sliceType$17], false)}, {prop: "StyleSheets", name: "StyleSheets", pkg: "", typ: $funcType([], [sliceType$17], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}]);
 	DocumentFragment.init([{prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "BaseURI", name: "BaseURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "ChildNodes", name: "ChildNodes", pkg: "", typ: $funcType([], [sliceType$2], false)}, {prop: "CloneNode", name: "CloneNode", pkg: "", typ: $funcType([$Bool], [Node], false)}, {prop: "CompareDocumentPosition", name: "CompareDocumentPosition", pkg: "", typ: $funcType([Node], [$Int], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "GetElementByID", name: "GetElementByID", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "IsDefaultNamespace", name: "IsDefaultNamespace", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "IsEqualNode", name: "IsEqualNode", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "LookupNamespaceURI", name: "LookupNamespaceURI", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "LookupPrefix", name: "LookupPrefix", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NodeName", name: "NodeName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NodeType", name: "NodeType", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "NodeValue", name: "NodeValue", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Normalize", name: "Normalize", pkg: "", typ: $funcType([], [], false)}, {prop: "OwnerDocument", name: "OwnerDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ParentElement", name: "ParentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [Node], false)}, {prop: "PreviousSibling", name: "PreviousSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "ReplaceChild", name: "ReplaceChild", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "SetNodeValue", name: "SetNodeValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}]);
-	documentFragment.init("", [{prop: "BasicNode", name: "BasicNode", anonymous: true, exported: true, typ: ptrType$23, tag: ""}]);
-	document.init("", [{prop: "BasicNode", name: "BasicNode", anonymous: true, exported: true, typ: ptrType$23, tag: ""}]);
-	htmlDocument.init("honnef.co/go/js/dom", [{prop: "document", name: "document", anonymous: true, exported: false, typ: ptrType$24, tag: ""}]);
+	documentFragment.init("", [{prop: "BasicNode", name: "BasicNode", anonymous: true, exported: true, typ: ptrType$24, tag: ""}]);
+	document.init("", [{prop: "BasicNode", name: "BasicNode", anonymous: true, exported: true, typ: ptrType$24, tag: ""}]);
+	htmlDocument.init("honnef.co/go/js/dom", [{prop: "document", name: "document", anonymous: true, exported: false, typ: ptrType$25, tag: ""}]);
 	URLUtils.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}, {prop: "Href", name: "Href", anonymous: false, exported: true, typ: $String, tag: "js:\"href\""}, {prop: "Protocol", name: "Protocol", anonymous: false, exported: true, typ: $String, tag: "js:\"protocol\""}, {prop: "Host", name: "Host", anonymous: false, exported: true, typ: $String, tag: "js:\"host\""}, {prop: "Hostname", name: "Hostname", anonymous: false, exported: true, typ: $String, tag: "js:\"hostname\""}, {prop: "Port", name: "Port", anonymous: false, exported: true, typ: $String, tag: "js:\"port\""}, {prop: "Pathname", name: "Pathname", anonymous: false, exported: true, typ: $String, tag: "js:\"pathname\""}, {prop: "Search", name: "Search", anonymous: false, exported: true, typ: $String, tag: "js:\"search\""}, {prop: "Hash", name: "Hash", anonymous: false, exported: true, typ: $String, tag: "js:\"hash\""}, {prop: "Username", name: "Username", anonymous: false, exported: true, typ: $String, tag: "js:\"username\""}, {prop: "Password", name: "Password", anonymous: false, exported: true, typ: $String, tag: "js:\"password\""}, {prop: "Origin", name: "Origin", anonymous: false, exported: true, typ: $String, tag: "js:\"origin\""}]);
 	Location.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}, {prop: "URLUtils", name: "URLUtils", anonymous: true, exported: true, typ: ptrType$2, tag: ""}]);
-	HTMLElement.init([{prop: "AccessKey", name: "AccessKey", pkg: "", typ: $funcType([], [$String], false)}, {prop: "AccessKeyLabel", name: "AccessKeyLabel", pkg: "", typ: $funcType([], [$String], false)}, {prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "Attributes", name: "Attributes", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "BaseURI", name: "BaseURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Blur", name: "Blur", pkg: "", typ: $funcType([], [], false)}, {prop: "ChildNodes", name: "ChildNodes", pkg: "", typ: $funcType([], [sliceType$2], false)}, {prop: "Class", name: "Class", pkg: "", typ: $funcType([], [ptrType$21], false)}, {prop: "Click", name: "Click", pkg: "", typ: $funcType([], [], false)}, {prop: "CloneNode", name: "CloneNode", pkg: "", typ: $funcType([$Bool], [Node], false)}, {prop: "CompareDocumentPosition", name: "CompareDocumentPosition", pkg: "", typ: $funcType([Node], [$Int], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "ContentEditable", name: "ContentEditable", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Dataset", name: "Dataset", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "Dir", name: "Dir", pkg: "", typ: $funcType([], [$String], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "Draggable", name: "Draggable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "Focus", name: "Focus", pkg: "", typ: $funcType([], [], false)}, {prop: "GetAttribute", name: "GetAttribute", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "GetAttributeNS", name: "GetAttributeNS", pkg: "", typ: $funcType([$String, $String], [$String], false)}, {prop: "GetBoundingClientRect", name: "GetBoundingClientRect", pkg: "", typ: $funcType([], [ClientRect], false)}, {prop: "GetElementsByClassName", name: "GetElementsByClassName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagName", name: "GetElementsByTagName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagNameNS", name: "GetElementsByTagNameNS", pkg: "", typ: $funcType([$String, $String], [sliceType$3], false)}, {prop: "HasAttribute", name: "HasAttribute", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "HasAttributeNS", name: "HasAttributeNS", pkg: "", typ: $funcType([$String, $String], [$Bool], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "ID", name: "ID", pkg: "", typ: $funcType([], [$String], false)}, {prop: "InnerHTML", name: "InnerHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "IsContentEditable", name: "IsContentEditable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "IsDefaultNamespace", name: "IsDefaultNamespace", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "IsEqualNode", name: "IsEqualNode", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "Lang", name: "Lang", pkg: "", typ: $funcType([], [$String], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "LookupNamespaceURI", name: "LookupNamespaceURI", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "LookupPrefix", name: "LookupPrefix", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NextElementSibling", name: "NextElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NodeName", name: "NodeName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NodeType", name: "NodeType", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "NodeValue", name: "NodeValue", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Normalize", name: "Normalize", pkg: "", typ: $funcType([], [], false)}, {prop: "OffsetHeight", name: "OffsetHeight", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetLeft", name: "OffsetLeft", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetParent", name: "OffsetParent", pkg: "", typ: $funcType([], [HTMLElement], false)}, {prop: "OffsetTop", name: "OffsetTop", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetWidth", name: "OffsetWidth", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OuterHTML", name: "OuterHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "OwnerDocument", name: "OwnerDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ParentElement", name: "ParentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [Node], false)}, {prop: "PreviousElementSibling", name: "PreviousElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "PreviousSibling", name: "PreviousSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "RemoveAttribute", name: "RemoveAttribute", pkg: "", typ: $funcType([$String], [], false)}, {prop: "RemoveAttributeNS", name: "RemoveAttributeNS", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "ReplaceChild", name: "ReplaceChild", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "SetAccessKey", name: "SetAccessKey", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetAccessKeyLabel", name: "SetAccessKeyLabel", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetAttribute", name: "SetAttribute", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "SetAttributeNS", name: "SetAttributeNS", pkg: "", typ: $funcType([$String, $String, $String], [], false)}, {prop: "SetContentEditable", name: "SetContentEditable", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetDir", name: "SetDir", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetDraggable", name: "SetDraggable", pkg: "", typ: $funcType([$Bool], [], false)}, {prop: "SetID", name: "SetID", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetInnerHTML", name: "SetInnerHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetLang", name: "SetLang", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetNodeValue", name: "SetNodeValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetOuterHTML", name: "SetOuterHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTitle", name: "SetTitle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Style", name: "Style", pkg: "", typ: $funcType([], [ptrType$26], false)}, {prop: "TagName", name: "TagName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Title", name: "Title", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}]);
-	Window.init([{prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "Alert", name: "Alert", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Back", name: "Back", pkg: "", typ: $funcType([], [], false)}, {prop: "Blur", name: "Blur", pkg: "", typ: $funcType([], [], false)}, {prop: "CancelAnimationFrame", name: "CancelAnimationFrame", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ClearInterval", name: "ClearInterval", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ClearTimeout", name: "ClearTimeout", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "Close", name: "Close", pkg: "", typ: $funcType([], [], false)}, {prop: "Confirm", name: "Confirm", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "Console", name: "Console", pkg: "", typ: $funcType([], [ptrType$27], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "Document", name: "Document", pkg: "", typ: $funcType([], [Document], false)}, {prop: "Focus", name: "Focus", pkg: "", typ: $funcType([], [], false)}, {prop: "Forward", name: "Forward", pkg: "", typ: $funcType([], [], false)}, {prop: "FrameElement", name: "FrameElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "GetComputedStyle", name: "GetComputedStyle", pkg: "", typ: $funcType([Element, $String], [ptrType$26], false)}, {prop: "GetSelection", name: "GetSelection", pkg: "", typ: $funcType([], [Selection], false)}, {prop: "History", name: "History", pkg: "", typ: $funcType([], [History], false)}, {prop: "Home", name: "Home", pkg: "", typ: $funcType([], [], false)}, {prop: "InnerHeight", name: "InnerHeight", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "InnerWidth", name: "InnerWidth", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Length", name: "Length", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Location", name: "Location", pkg: "", typ: $funcType([], [ptrType$22], false)}, {prop: "MoveBy", name: "MoveBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "MoveTo", name: "MoveTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Name", name: "Name", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Navigator", name: "Navigator", pkg: "", typ: $funcType([], [Navigator], false)}, {prop: "Open", name: "Open", pkg: "", typ: $funcType([$String, $String, $String], [Window], false)}, {prop: "OpenDialog", name: "OpenDialog", pkg: "", typ: $funcType([$String, $String, $String, sliceType], [Window], false)}, {prop: "Opener", name: "Opener", pkg: "", typ: $funcType([], [Window], false)}, {prop: "OuterHeight", name: "OuterHeight", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "OuterWidth", name: "OuterWidth", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Parent", name: "Parent", pkg: "", typ: $funcType([], [Window], false)}, {prop: "PostMessage", name: "PostMessage", pkg: "", typ: $funcType([$String, $String, sliceType], [], false)}, {prop: "Print", name: "Print", pkg: "", typ: $funcType([], [], false)}, {prop: "Prompt", name: "Prompt", pkg: "", typ: $funcType([$String, $String], [$String], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "RequestAnimationFrame", name: "RequestAnimationFrame", pkg: "", typ: $funcType([funcType$3], [$Int], false)}, {prop: "ResizeBy", name: "ResizeBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ResizeTo", name: "ResizeTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Screen", name: "Screen", pkg: "", typ: $funcType([], [ptrType$28], false)}, {prop: "ScreenX", name: "ScreenX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScreenY", name: "ScreenY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Scroll", name: "Scroll", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ScrollBy", name: "ScrollBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ScrollByLines", name: "ScrollByLines", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ScrollMaxX", name: "ScrollMaxX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollMaxY", name: "ScrollMaxY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollTo", name: "ScrollTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ScrollX", name: "ScrollX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollY", name: "ScrollY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "SetCursor", name: "SetCursor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetInterval", name: "SetInterval", pkg: "", typ: $funcType([funcType, $Int], [$Int], false)}, {prop: "SetName", name: "SetName", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTimeout", name: "SetTimeout", pkg: "", typ: $funcType([funcType, $Int], [$Int], false)}, {prop: "Stop", name: "Stop", pkg: "", typ: $funcType([], [], false)}, {prop: "Top", name: "Top", pkg: "", typ: $funcType([], [Window], false)}]);
+	HTMLElement.init([{prop: "AccessKey", name: "AccessKey", pkg: "", typ: $funcType([], [$String], false)}, {prop: "AccessKeyLabel", name: "AccessKeyLabel", pkg: "", typ: $funcType([], [$String], false)}, {prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "Attributes", name: "Attributes", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "BaseURI", name: "BaseURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Blur", name: "Blur", pkg: "", typ: $funcType([], [], false)}, {prop: "ChildNodes", name: "ChildNodes", pkg: "", typ: $funcType([], [sliceType$2], false)}, {prop: "Class", name: "Class", pkg: "", typ: $funcType([], [ptrType$22], false)}, {prop: "Click", name: "Click", pkg: "", typ: $funcType([], [], false)}, {prop: "CloneNode", name: "CloneNode", pkg: "", typ: $funcType([$Bool], [Node], false)}, {prop: "CompareDocumentPosition", name: "CompareDocumentPosition", pkg: "", typ: $funcType([Node], [$Int], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "ContentEditable", name: "ContentEditable", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Dataset", name: "Dataset", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "Dir", name: "Dir", pkg: "", typ: $funcType([], [$String], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "Draggable", name: "Draggable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "Focus", name: "Focus", pkg: "", typ: $funcType([], [], false)}, {prop: "GetAttribute", name: "GetAttribute", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "GetAttributeNS", name: "GetAttributeNS", pkg: "", typ: $funcType([$String, $String], [$String], false)}, {prop: "GetBoundingClientRect", name: "GetBoundingClientRect", pkg: "", typ: $funcType([], [ClientRect], false)}, {prop: "GetElementsByClassName", name: "GetElementsByClassName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagName", name: "GetElementsByTagName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagNameNS", name: "GetElementsByTagNameNS", pkg: "", typ: $funcType([$String, $String], [sliceType$3], false)}, {prop: "HasAttribute", name: "HasAttribute", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "HasAttributeNS", name: "HasAttributeNS", pkg: "", typ: $funcType([$String, $String], [$Bool], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "ID", name: "ID", pkg: "", typ: $funcType([], [$String], false)}, {prop: "InnerHTML", name: "InnerHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "IsContentEditable", name: "IsContentEditable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "IsDefaultNamespace", name: "IsDefaultNamespace", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "IsEqualNode", name: "IsEqualNode", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "Lang", name: "Lang", pkg: "", typ: $funcType([], [$String], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "LookupNamespaceURI", name: "LookupNamespaceURI", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "LookupPrefix", name: "LookupPrefix", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NextElementSibling", name: "NextElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NodeName", name: "NodeName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NodeType", name: "NodeType", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "NodeValue", name: "NodeValue", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Normalize", name: "Normalize", pkg: "", typ: $funcType([], [], false)}, {prop: "OffsetHeight", name: "OffsetHeight", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetLeft", name: "OffsetLeft", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetParent", name: "OffsetParent", pkg: "", typ: $funcType([], [HTMLElement], false)}, {prop: "OffsetTop", name: "OffsetTop", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OffsetWidth", name: "OffsetWidth", pkg: "", typ: $funcType([], [$Float64], false)}, {prop: "OuterHTML", name: "OuterHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "OwnerDocument", name: "OwnerDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ParentElement", name: "ParentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [Node], false)}, {prop: "PreviousElementSibling", name: "PreviousElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "PreviousSibling", name: "PreviousSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "RemoveAttribute", name: "RemoveAttribute", pkg: "", typ: $funcType([$String], [], false)}, {prop: "RemoveAttributeNS", name: "RemoveAttributeNS", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "ReplaceChild", name: "ReplaceChild", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "SetAccessKey", name: "SetAccessKey", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetAccessKeyLabel", name: "SetAccessKeyLabel", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetAttribute", name: "SetAttribute", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "SetAttributeNS", name: "SetAttributeNS", pkg: "", typ: $funcType([$String, $String, $String], [], false)}, {prop: "SetContentEditable", name: "SetContentEditable", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetDir", name: "SetDir", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetDraggable", name: "SetDraggable", pkg: "", typ: $funcType([$Bool], [], false)}, {prop: "SetID", name: "SetID", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetInnerHTML", name: "SetInnerHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetLang", name: "SetLang", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetNodeValue", name: "SetNodeValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetOuterHTML", name: "SetOuterHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTitle", name: "SetTitle", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Style", name: "Style", pkg: "", typ: $funcType([], [ptrType$27], false)}, {prop: "TagName", name: "TagName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Title", name: "Title", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}]);
+	Window.init([{prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "Alert", name: "Alert", pkg: "", typ: $funcType([$String], [], false)}, {prop: "Back", name: "Back", pkg: "", typ: $funcType([], [], false)}, {prop: "Blur", name: "Blur", pkg: "", typ: $funcType([], [], false)}, {prop: "CancelAnimationFrame", name: "CancelAnimationFrame", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ClearInterval", name: "ClearInterval", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ClearTimeout", name: "ClearTimeout", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "Close", name: "Close", pkg: "", typ: $funcType([], [], false)}, {prop: "Confirm", name: "Confirm", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "Console", name: "Console", pkg: "", typ: $funcType([], [ptrType$28], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "Document", name: "Document", pkg: "", typ: $funcType([], [Document], false)}, {prop: "Focus", name: "Focus", pkg: "", typ: $funcType([], [], false)}, {prop: "Forward", name: "Forward", pkg: "", typ: $funcType([], [], false)}, {prop: "FrameElement", name: "FrameElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "GetComputedStyle", name: "GetComputedStyle", pkg: "", typ: $funcType([Element, $String], [ptrType$27], false)}, {prop: "GetSelection", name: "GetSelection", pkg: "", typ: $funcType([], [Selection], false)}, {prop: "History", name: "History", pkg: "", typ: $funcType([], [History], false)}, {prop: "Home", name: "Home", pkg: "", typ: $funcType([], [], false)}, {prop: "InnerHeight", name: "InnerHeight", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "InnerWidth", name: "InnerWidth", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Length", name: "Length", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Location", name: "Location", pkg: "", typ: $funcType([], [ptrType$23], false)}, {prop: "MoveBy", name: "MoveBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "MoveTo", name: "MoveTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Name", name: "Name", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Navigator", name: "Navigator", pkg: "", typ: $funcType([], [Navigator], false)}, {prop: "Open", name: "Open", pkg: "", typ: $funcType([$String, $String, $String], [Window], false)}, {prop: "OpenDialog", name: "OpenDialog", pkg: "", typ: $funcType([$String, $String, $String, sliceType], [Window], false)}, {prop: "Opener", name: "Opener", pkg: "", typ: $funcType([], [Window], false)}, {prop: "OuterHeight", name: "OuterHeight", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "OuterWidth", name: "OuterWidth", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Parent", name: "Parent", pkg: "", typ: $funcType([], [Window], false)}, {prop: "PostMessage", name: "PostMessage", pkg: "", typ: $funcType([$String, $String, sliceType], [], false)}, {prop: "Print", name: "Print", pkg: "", typ: $funcType([], [], false)}, {prop: "Prompt", name: "Prompt", pkg: "", typ: $funcType([$String, $String], [$String], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "RequestAnimationFrame", name: "RequestAnimationFrame", pkg: "", typ: $funcType([funcType$3], [$Int], false)}, {prop: "ResizeBy", name: "ResizeBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ResizeTo", name: "ResizeTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "Screen", name: "Screen", pkg: "", typ: $funcType([], [ptrType$29], false)}, {prop: "ScreenX", name: "ScreenX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScreenY", name: "ScreenY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "Scroll", name: "Scroll", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ScrollBy", name: "ScrollBy", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ScrollByLines", name: "ScrollByLines", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "ScrollMaxX", name: "ScrollMaxX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollMaxY", name: "ScrollMaxY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollTo", name: "ScrollTo", pkg: "", typ: $funcType([$Int, $Int], [], false)}, {prop: "ScrollX", name: "ScrollX", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "ScrollY", name: "ScrollY", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "SetCursor", name: "SetCursor", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetInterval", name: "SetInterval", pkg: "", typ: $funcType([funcType, $Int], [$Int], false)}, {prop: "SetName", name: "SetName", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTimeout", name: "SetTimeout", pkg: "", typ: $funcType([funcType, $Int], [$Int], false)}, {prop: "Stop", name: "Stop", pkg: "", typ: $funcType([], [], false)}, {prop: "Top", name: "Top", pkg: "", typ: $funcType([], [Window], false)}]);
 	window.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}]);
 	Selection.init([]);
 	Screen.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}, {prop: "AvailTop", name: "AvailTop", anonymous: false, exported: true, typ: $Int, tag: "js:\"availTop\""}, {prop: "AvailLeft", name: "AvailLeft", anonymous: false, exported: true, typ: $Int, tag: "js:\"availLeft\""}, {prop: "AvailHeight", name: "AvailHeight", anonymous: false, exported: true, typ: $Int, tag: "js:\"availHeight\""}, {prop: "AvailWidth", name: "AvailWidth", anonymous: false, exported: true, typ: $Int, tag: "js:\"availWidth\""}, {prop: "ColorDepth", name: "ColorDepth", anonymous: false, exported: true, typ: $Int, tag: "js:\"colorDepth\""}, {prop: "Height", name: "Height", anonymous: false, exported: true, typ: $Int, tag: "js:\"height\""}, {prop: "Left", name: "Left", anonymous: false, exported: true, typ: $Int, tag: "js:\"left\""}, {prop: "PixelDepth", name: "PixelDepth", anonymous: false, exported: true, typ: $Int, tag: "js:\"pixelDepth\""}, {prop: "Top", name: "Top", anonymous: false, exported: true, typ: $Int, tag: "js:\"top\""}, {prop: "Width", name: "Width", anonymous: false, exported: true, typ: $Int, tag: "js:\"width\""}]);
@@ -34805,7 +34781,7 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	Geolocation.init([{prop: "ClearWatch", name: "ClearWatch", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "CurrentPosition", name: "CurrentPosition", pkg: "", typ: $funcType([funcType$4, funcType$5, PositionOptions], [Position], false)}, {prop: "WatchPosition", name: "WatchPosition", pkg: "", typ: $funcType([funcType$4, funcType$5, PositionOptions], [$Int], false)}]);
 	PositionError.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}, {prop: "Code", name: "Code", anonymous: false, exported: true, typ: $Int, tag: "js:\"code\""}]);
 	PositionOptions.init("", [{prop: "EnableHighAccuracy", name: "EnableHighAccuracy", anonymous: false, exported: true, typ: $Bool, tag: ""}, {prop: "Timeout", name: "Timeout", anonymous: false, exported: true, typ: time.Duration, tag: ""}, {prop: "MaximumAge", name: "MaximumAge", anonymous: false, exported: true, typ: time.Duration, tag: ""}]);
-	Position.init("", [{prop: "Coords", name: "Coords", anonymous: false, exported: true, typ: ptrType$31, tag: ""}, {prop: "Timestamp", name: "Timestamp", anonymous: false, exported: true, typ: time.Time, tag: ""}]);
+	Position.init("", [{prop: "Coords", name: "Coords", anonymous: false, exported: true, typ: ptrType$32, tag: ""}, {prop: "Timestamp", name: "Timestamp", anonymous: false, exported: true, typ: time.Time, tag: ""}]);
 	Coordinates.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}, {prop: "Latitude", name: "Latitude", anonymous: false, exported: true, typ: $Float64, tag: "js:\"latitude\""}, {prop: "Longitude", name: "Longitude", anonymous: false, exported: true, typ: $Float64, tag: "js:\"longitude\""}, {prop: "Altitude", name: "Altitude", anonymous: false, exported: true, typ: $Float64, tag: "js:\"altitude\""}, {prop: "Accuracy", name: "Accuracy", anonymous: false, exported: true, typ: $Float64, tag: "js:\"accuracy\""}, {prop: "AltitudeAccuracy", name: "AltitudeAccuracy", anonymous: false, exported: true, typ: $Float64, tag: "js:\"altitudeAccuracy\""}, {prop: "Heading", name: "Heading", anonymous: false, exported: true, typ: $Float64, tag: "js:\"heading\""}, {prop: "Speed", name: "Speed", anonymous: false, exported: true, typ: $Float64, tag: "js:\"speed\""}]);
 	History.init([{prop: "Back", name: "Back", pkg: "", typ: $funcType([], [], false)}, {prop: "Forward", name: "Forward", pkg: "", typ: $funcType([], [], false)}, {prop: "Go", name: "Go", pkg: "", typ: $funcType([$Int], [], false)}, {prop: "Length", name: "Length", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "PushState", name: "PushState", pkg: "", typ: $funcType([$emptyInterface, $String, $String], [], false)}, {prop: "ReplaceState", name: "ReplaceState", pkg: "", typ: $funcType([$emptyInterface, $String, $String], [], false)}, {prop: "State", name: "State", pkg: "", typ: $funcType([], [$emptyInterface], false)}]);
 	Console.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}]);
@@ -34814,10 +34790,10 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	StyleSheet.init([]);
 	Node.init([{prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "BaseURI", name: "BaseURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "ChildNodes", name: "ChildNodes", pkg: "", typ: $funcType([], [sliceType$2], false)}, {prop: "CloneNode", name: "CloneNode", pkg: "", typ: $funcType([$Bool], [Node], false)}, {prop: "CompareDocumentPosition", name: "CompareDocumentPosition", pkg: "", typ: $funcType([Node], [$Int], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "IsDefaultNamespace", name: "IsDefaultNamespace", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "IsEqualNode", name: "IsEqualNode", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "LookupNamespaceURI", name: "LookupNamespaceURI", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "LookupPrefix", name: "LookupPrefix", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NodeName", name: "NodeName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NodeType", name: "NodeType", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "NodeValue", name: "NodeValue", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Normalize", name: "Normalize", pkg: "", typ: $funcType([], [], false)}, {prop: "OwnerDocument", name: "OwnerDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ParentElement", name: "ParentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [Node], false)}, {prop: "PreviousSibling", name: "PreviousSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "ReplaceChild", name: "ReplaceChild", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "SetNodeValue", name: "SetNodeValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}]);
 	BasicNode.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}]);
-	Element.init([{prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "Attributes", name: "Attributes", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "BaseURI", name: "BaseURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "ChildNodes", name: "ChildNodes", pkg: "", typ: $funcType([], [sliceType$2], false)}, {prop: "Class", name: "Class", pkg: "", typ: $funcType([], [ptrType$21], false)}, {prop: "CloneNode", name: "CloneNode", pkg: "", typ: $funcType([$Bool], [Node], false)}, {prop: "CompareDocumentPosition", name: "CompareDocumentPosition", pkg: "", typ: $funcType([Node], [$Int], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "GetAttribute", name: "GetAttribute", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "GetAttributeNS", name: "GetAttributeNS", pkg: "", typ: $funcType([$String, $String], [$String], false)}, {prop: "GetBoundingClientRect", name: "GetBoundingClientRect", pkg: "", typ: $funcType([], [ClientRect], false)}, {prop: "GetElementsByClassName", name: "GetElementsByClassName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagName", name: "GetElementsByTagName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagNameNS", name: "GetElementsByTagNameNS", pkg: "", typ: $funcType([$String, $String], [sliceType$3], false)}, {prop: "HasAttribute", name: "HasAttribute", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "HasAttributeNS", name: "HasAttributeNS", pkg: "", typ: $funcType([$String, $String], [$Bool], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "ID", name: "ID", pkg: "", typ: $funcType([], [$String], false)}, {prop: "InnerHTML", name: "InnerHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "IsDefaultNamespace", name: "IsDefaultNamespace", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "IsEqualNode", name: "IsEqualNode", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "LookupNamespaceURI", name: "LookupNamespaceURI", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "LookupPrefix", name: "LookupPrefix", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NextElementSibling", name: "NextElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NodeName", name: "NodeName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NodeType", name: "NodeType", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "NodeValue", name: "NodeValue", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Normalize", name: "Normalize", pkg: "", typ: $funcType([], [], false)}, {prop: "OuterHTML", name: "OuterHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "OwnerDocument", name: "OwnerDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ParentElement", name: "ParentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [Node], false)}, {prop: "PreviousElementSibling", name: "PreviousElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "PreviousSibling", name: "PreviousSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "RemoveAttribute", name: "RemoveAttribute", pkg: "", typ: $funcType([$String], [], false)}, {prop: "RemoveAttributeNS", name: "RemoveAttributeNS", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "ReplaceChild", name: "ReplaceChild", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "SetAttribute", name: "SetAttribute", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "SetAttributeNS", name: "SetAttributeNS", pkg: "", typ: $funcType([$String, $String, $String], [], false)}, {prop: "SetID", name: "SetID", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetInnerHTML", name: "SetInnerHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetNodeValue", name: "SetNodeValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetOuterHTML", name: "SetOuterHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TagName", name: "TagName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}]);
+	Element.init([{prop: "AddEventListener", name: "AddEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$2], [funcType$1], false)}, {prop: "AppendChild", name: "AppendChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "Attributes", name: "Attributes", pkg: "", typ: $funcType([], [mapType], false)}, {prop: "BaseURI", name: "BaseURI", pkg: "", typ: $funcType([], [$String], false)}, {prop: "ChildNodes", name: "ChildNodes", pkg: "", typ: $funcType([], [sliceType$2], false)}, {prop: "Class", name: "Class", pkg: "", typ: $funcType([], [ptrType$22], false)}, {prop: "CloneNode", name: "CloneNode", pkg: "", typ: $funcType([$Bool], [Node], false)}, {prop: "CompareDocumentPosition", name: "CompareDocumentPosition", pkg: "", typ: $funcType([Node], [$Int], false)}, {prop: "Contains", name: "Contains", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "DispatchEvent", name: "DispatchEvent", pkg: "", typ: $funcType([Event], [$Bool], false)}, {prop: "FirstChild", name: "FirstChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "GetAttribute", name: "GetAttribute", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "GetAttributeNS", name: "GetAttributeNS", pkg: "", typ: $funcType([$String, $String], [$String], false)}, {prop: "GetBoundingClientRect", name: "GetBoundingClientRect", pkg: "", typ: $funcType([], [ClientRect], false)}, {prop: "GetElementsByClassName", name: "GetElementsByClassName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagName", name: "GetElementsByTagName", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "GetElementsByTagNameNS", name: "GetElementsByTagNameNS", pkg: "", typ: $funcType([$String, $String], [sliceType$3], false)}, {prop: "HasAttribute", name: "HasAttribute", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "HasAttributeNS", name: "HasAttributeNS", pkg: "", typ: $funcType([$String, $String], [$Bool], false)}, {prop: "HasChildNodes", name: "HasChildNodes", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "ID", name: "ID", pkg: "", typ: $funcType([], [$String], false)}, {prop: "InnerHTML", name: "InnerHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "InsertBefore", name: "InsertBefore", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "IsDefaultNamespace", name: "IsDefaultNamespace", pkg: "", typ: $funcType([$String], [$Bool], false)}, {prop: "IsEqualNode", name: "IsEqualNode", pkg: "", typ: $funcType([Node], [$Bool], false)}, {prop: "LastChild", name: "LastChild", pkg: "", typ: $funcType([], [Node], false)}, {prop: "LookupNamespaceURI", name: "LookupNamespaceURI", pkg: "", typ: $funcType([$String], [$String], false)}, {prop: "LookupPrefix", name: "LookupPrefix", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NextElementSibling", name: "NextElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "NextSibling", name: "NextSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "NodeName", name: "NodeName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "NodeType", name: "NodeType", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "NodeValue", name: "NodeValue", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Normalize", name: "Normalize", pkg: "", typ: $funcType([], [], false)}, {prop: "OuterHTML", name: "OuterHTML", pkg: "", typ: $funcType([], [$String], false)}, {prop: "OwnerDocument", name: "OwnerDocument", pkg: "", typ: $funcType([], [Document], false)}, {prop: "ParentElement", name: "ParentElement", pkg: "", typ: $funcType([], [Element], false)}, {prop: "ParentNode", name: "ParentNode", pkg: "", typ: $funcType([], [Node], false)}, {prop: "PreviousElementSibling", name: "PreviousElementSibling", pkg: "", typ: $funcType([], [Element], false)}, {prop: "PreviousSibling", name: "PreviousSibling", pkg: "", typ: $funcType([], [Node], false)}, {prop: "QuerySelector", name: "QuerySelector", pkg: "", typ: $funcType([$String], [Element], false)}, {prop: "QuerySelectorAll", name: "QuerySelectorAll", pkg: "", typ: $funcType([$String], [sliceType$3], false)}, {prop: "RemoveAttribute", name: "RemoveAttribute", pkg: "", typ: $funcType([$String], [], false)}, {prop: "RemoveAttributeNS", name: "RemoveAttributeNS", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "RemoveChild", name: "RemoveChild", pkg: "", typ: $funcType([Node], [], false)}, {prop: "RemoveEventListener", name: "RemoveEventListener", pkg: "", typ: $funcType([$String, $Bool, funcType$1], [], false)}, {prop: "ReplaceChild", name: "ReplaceChild", pkg: "", typ: $funcType([Node, Node], [], false)}, {prop: "SetAttribute", name: "SetAttribute", pkg: "", typ: $funcType([$String, $String], [], false)}, {prop: "SetAttributeNS", name: "SetAttributeNS", pkg: "", typ: $funcType([$String, $String, $String], [], false)}, {prop: "SetID", name: "SetID", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetInnerHTML", name: "SetInnerHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetNodeValue", name: "SetNodeValue", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetOuterHTML", name: "SetOuterHTML", pkg: "", typ: $funcType([$String], [], false)}, {prop: "SetTextContent", name: "SetTextContent", pkg: "", typ: $funcType([$String], [], false)}, {prop: "TagName", name: "TagName", pkg: "", typ: $funcType([], [$String], false)}, {prop: "TextContent", name: "TextContent", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}]);
 	ClientRect.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}, {prop: "Height", name: "Height", anonymous: false, exported: true, typ: $Float64, tag: "js:\"height\""}, {prop: "Width", name: "Width", anonymous: false, exported: true, typ: $Float64, tag: "js:\"width\""}, {prop: "Left", name: "Left", anonymous: false, exported: true, typ: $Float64, tag: "js:\"left\""}, {prop: "Right", name: "Right", anonymous: false, exported: true, typ: $Float64, tag: "js:\"right\""}, {prop: "Top", name: "Top", anonymous: false, exported: true, typ: $Float64, tag: "js:\"top\""}, {prop: "Bottom", name: "Bottom", anonymous: false, exported: true, typ: $Float64, tag: "js:\"bottom\""}]);
-	BasicHTMLElement.init("", [{prop: "BasicElement", name: "BasicElement", anonymous: true, exported: true, typ: ptrType$32, tag: ""}]);
-	BasicElement.init("", [{prop: "BasicNode", name: "BasicNode", anonymous: true, exported: true, typ: ptrType$23, tag: ""}]);
+	BasicHTMLElement.init("", [{prop: "BasicElement", name: "BasicElement", anonymous: true, exported: true, typ: ptrType$33, tag: ""}]);
+	BasicElement.init("", [{prop: "BasicNode", name: "BasicNode", anonymous: true, exported: true, typ: ptrType$24, tag: ""}]);
 	HTMLAnchorElement.init("", [{prop: "BasicHTMLElement", name: "BasicHTMLElement", anonymous: true, exported: true, typ: ptrType$1, tag: ""}, {prop: "URLUtils", name: "URLUtils", anonymous: true, exported: true, typ: ptrType$2, tag: ""}, {prop: "HrefLang", name: "HrefLang", anonymous: false, exported: true, typ: $String, tag: "js:\"hreflang\""}, {prop: "Media", name: "Media", anonymous: false, exported: true, typ: $String, tag: "js:\"media\""}, {prop: "TabIndex", name: "TabIndex", anonymous: false, exported: true, typ: $Int, tag: "js:\"tabIndex\""}, {prop: "Target", name: "Target", anonymous: false, exported: true, typ: $String, tag: "js:\"target\""}, {prop: "Text", name: "Text", anonymous: false, exported: true, typ: $String, tag: "js:\"text\""}, {prop: "Type", name: "Type", anonymous: false, exported: true, typ: $String, tag: "js:\"type\""}]);
 	HTMLAppletElement.init("", [{prop: "BasicHTMLElement", name: "BasicHTMLElement", anonymous: true, exported: true, typ: ptrType$1, tag: ""}, {prop: "Alt", name: "Alt", anonymous: false, exported: true, typ: $String, tag: "js:\"alt\""}, {prop: "Coords", name: "Coords", anonymous: false, exported: true, typ: $String, tag: "js:\"coords\""}, {prop: "HrefLang", name: "HrefLang", anonymous: false, exported: true, typ: $String, tag: "js:\"hreflang\""}, {prop: "Media", name: "Media", anonymous: false, exported: true, typ: $String, tag: "js:\"media\""}, {prop: "Search", name: "Search", anonymous: false, exported: true, typ: $String, tag: "js:\"search\""}, {prop: "Shape", name: "Shape", anonymous: false, exported: true, typ: $String, tag: "js:\"shape\""}, {prop: "TabIndex", name: "TabIndex", anonymous: false, exported: true, typ: $Int, tag: "js:\"tabIndex\""}, {prop: "Target", name: "Target", anonymous: false, exported: true, typ: $String, tag: "js:\"target\""}, {prop: "Type", name: "Type", anonymous: false, exported: true, typ: $String, tag: "js:\"type\""}]);
 	HTMLAreaElement.init("", [{prop: "BasicHTMLElement", name: "BasicHTMLElement", anonymous: true, exported: true, typ: ptrType$1, tag: ""}, {prop: "URLUtils", name: "URLUtils", anonymous: true, exported: true, typ: ptrType$2, tag: ""}, {prop: "Alt", name: "Alt", anonymous: false, exported: true, typ: $String, tag: "js:\"alt\""}, {prop: "Coords", name: "Coords", anonymous: false, exported: true, typ: $String, tag: "js:\"coords\""}, {prop: "HrefLang", name: "HrefLang", anonymous: false, exported: true, typ: $String, tag: "js:\"hreflang\""}, {prop: "Media", name: "Media", anonymous: false, exported: true, typ: $String, tag: "js:\"media\""}, {prop: "Search", name: "Search", anonymous: false, exported: true, typ: $String, tag: "js:\"search\""}, {prop: "Shape", name: "Shape", anonymous: false, exported: true, typ: $String, tag: "js:\"shape\""}, {prop: "TabIndex", name: "TabIndex", anonymous: false, exported: true, typ: $Int, tag: "js:\"tabIndex\""}, {prop: "Target", name: "Target", anonymous: false, exported: true, typ: $String, tag: "js:\"target\""}, {prop: "Type", name: "Type", anonymous: false, exported: true, typ: $String, tag: "js:\"type\""}]);
@@ -34830,8 +34806,6 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	HTMLCanvasElement.init("", [{prop: "BasicHTMLElement", name: "BasicHTMLElement", anonymous: true, exported: true, typ: ptrType$1, tag: ""}, {prop: "Height", name: "Height", anonymous: false, exported: true, typ: $Int, tag: "js:\"height\""}, {prop: "Width", name: "Width", anonymous: false, exported: true, typ: $Int, tag: "js:\"width\""}]);
 	CanvasRenderingContext2D.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}, {prop: "FillStyle", name: "FillStyle", anonymous: false, exported: true, typ: $String, tag: "js:\"fillStyle\""}, {prop: "StrokeStyle", name: "StrokeStyle", anonymous: false, exported: true, typ: $String, tag: "js:\"strokeStyle\""}, {prop: "ShadowColor", name: "ShadowColor", anonymous: false, exported: true, typ: $String, tag: "js:\"shadowColor\""}, {prop: "ShadowBlur", name: "ShadowBlur", anonymous: false, exported: true, typ: $Int, tag: "js:\"shadowBlur\""}, {prop: "ShadowOffsetX", name: "ShadowOffsetX", anonymous: false, exported: true, typ: $Int, tag: "js:\"shadowOffsetX\""}, {prop: "ShadowOffsetY", name: "ShadowOffsetY", anonymous: false, exported: true, typ: $Int, tag: "js:\"shadowOffsetY\""}, {prop: "LineCap", name: "LineCap", anonymous: false, exported: true, typ: $String, tag: "js:\"lineCap\""}, {prop: "LineJoin", name: "LineJoin", anonymous: false, exported: true, typ: $String, tag: "js:\"lineJoin\""}, {prop: "LineWidth", name: "LineWidth", anonymous: false, exported: true, typ: $Int, tag: "js:\"lineWidth\""}, {prop: "MiterLimit", name: "MiterLimit", anonymous: false, exported: true, typ: $Int, tag: "js:\"miterLimit\""}, {prop: "Font", name: "Font", anonymous: false, exported: true, typ: $String, tag: "js:\"font\""}, {prop: "TextAlign", name: "TextAlign", anonymous: false, exported: true, typ: $String, tag: "js:\"textAlign\""}, {prop: "TextBaseline", name: "TextBaseline", anonymous: false, exported: true, typ: $String, tag: "js:\"textBaseline\""}, {prop: "GlobalAlpha", name: "GlobalAlpha", anonymous: false, exported: true, typ: $Float64, tag: "js:\"globalAlpha\""}, {prop: "GlobalCompositeOperation", name: "GlobalCompositeOperation", anonymous: false, exported: true, typ: $String, tag: "js:\"globalCompositeOperation\""}]);
 	ImageData.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}, {prop: "Width", name: "Width", anonymous: false, exported: true, typ: $Int, tag: "js:\"width\""}, {prop: "Height", name: "Height", anonymous: false, exported: true, typ: $Int, tag: "js:\"height\""}, {prop: "Data", name: "Data", anonymous: false, exported: true, typ: ptrType, tag: "js:\"data\""}]);
-	CanvasGradient.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}]);
-	CanvasPattern.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}]);
 	TextMetrics.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}, {prop: "Width", name: "Width", anonymous: false, exported: true, typ: $Float64, tag: "js:\"width\""}, {prop: "ActualBoundingBoxLeft", name: "ActualBoundingBoxLeft", anonymous: false, exported: true, typ: $Float64, tag: "js:\"actualBoundingBoxLeft\""}, {prop: "ActualBoundingBoxRight", name: "ActualBoundingBoxRight", anonymous: false, exported: true, typ: $Float64, tag: "js:\"actualBoundingBoxRight\""}, {prop: "FontBoundingBoxAscent", name: "FontBoundingBoxAscent", anonymous: false, exported: true, typ: $Float64, tag: "js:\"fontBoundingBoxAscent\""}, {prop: "FontBoundingBoxDescent", name: "FontBoundingBoxDescent", anonymous: false, exported: true, typ: $Float64, tag: "js:\"fontBoundingBoxDescent\""}, {prop: "ActualBoundingBoxAscent", name: "ActualBoundingBoxAscent", anonymous: false, exported: true, typ: $Float64, tag: "js:\"actualBoundingBoxAscent\""}, {prop: "ActualBoundingBoxDescent", name: "ActualBoundingBoxDescent", anonymous: false, exported: true, typ: $Float64, tag: "js:\"actualBoundingBoxDescent\""}, {prop: "EmHeightAscent", name: "EmHeightAscent", anonymous: false, exported: true, typ: $Float64, tag: "js:\"emHeightAscent\""}, {prop: "EmHeightDescent", name: "EmHeightDescent", anonymous: false, exported: true, typ: $Float64, tag: "js:\"emHeightDescent\""}, {prop: "HangingBaseline", name: "HangingBaseline", anonymous: false, exported: true, typ: $Float64, tag: "js:\"hangingBaseline\""}, {prop: "AlphabeticBaseline", name: "AlphabeticBaseline", anonymous: false, exported: true, typ: $Float64, tag: "js:\"alphabeticBaseline\""}, {prop: "IdeographicBaseline", name: "IdeographicBaseline", anonymous: false, exported: true, typ: $Float64, tag: "js:\"ideographicBaseline\""}]);
 	HTMLDListElement.init("", [{prop: "BasicHTMLElement", name: "BasicHTMLElement", anonymous: true, exported: true, typ: ptrType$1, tag: ""}]);
 	HTMLDataElement.init("", [{prop: "BasicHTMLElement", name: "BasicHTMLElement", anonymous: true, exported: true, typ: ptrType$1, tag: ""}, {prop: "Value", name: "Value", anonymous: false, exported: true, typ: $String, tag: "js:\"value\""}]);
@@ -34895,54 +34869,54 @@ $packages["honnef.co/go/js/dom"] = (function() {
 	HTMLUnknownElement.init("", [{prop: "BasicHTMLElement", name: "BasicHTMLElement", anonymous: true, exported: true, typ: ptrType$1, tag: ""}]);
 	HTMLVideoElement.init("", [{prop: "HTMLMediaElement", name: "HTMLMediaElement", anonymous: true, exported: true, typ: ptrType$3, tag: ""}]);
 	CSSStyleDeclaration.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}]);
-	Text.init("", [{prop: "BasicNode", name: "BasicNode", anonymous: true, exported: true, typ: ptrType$23, tag: ""}]);
+	Text.init("", [{prop: "BasicNode", name: "BasicNode", anonymous: true, exported: true, typ: ptrType$24, tag: ""}]);
 	Event.init([{prop: "Bubbles", name: "Bubbles", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "Cancelable", name: "Cancelable", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "CurrentTarget", name: "CurrentTarget", pkg: "", typ: $funcType([], [Element], false)}, {prop: "DefaultPrevented", name: "DefaultPrevented", pkg: "", typ: $funcType([], [$Bool], false)}, {prop: "EventPhase", name: "EventPhase", pkg: "", typ: $funcType([], [$Int], false)}, {prop: "PreventDefault", name: "PreventDefault", pkg: "", typ: $funcType([], [], false)}, {prop: "StopImmediatePropagation", name: "StopImmediatePropagation", pkg: "", typ: $funcType([], [], false)}, {prop: "StopPropagation", name: "StopPropagation", pkg: "", typ: $funcType([], [], false)}, {prop: "Target", name: "Target", pkg: "", typ: $funcType([], [Element], false)}, {prop: "Timestamp", name: "Timestamp", pkg: "", typ: $funcType([], [time.Time], false)}, {prop: "Type", name: "Type", pkg: "", typ: $funcType([], [$String], false)}, {prop: "Underlying", name: "Underlying", pkg: "", typ: $funcType([], [ptrType], false)}]);
 	BasicEvent.init("", [{prop: "Object", name: "Object", anonymous: true, exported: true, typ: ptrType, tag: ""}]);
-	AnimationEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	AudioProcessingEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	BeforeInputEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	BeforeUnloadEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	BlobEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	ClipboardEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	CloseEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}, {prop: "Code", name: "Code", anonymous: false, exported: true, typ: $Int, tag: "js:\"code\""}, {prop: "Reason", name: "Reason", anonymous: false, exported: true, typ: $String, tag: "js:\"reason\""}, {prop: "WasClean", name: "WasClean", anonymous: false, exported: true, typ: $Bool, tag: "js:\"wasClean\""}]);
-	CompositionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	CSSFontFaceLoadEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	CustomEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	DeviceLightEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	DeviceMotionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	DeviceOrientationEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	DeviceProximityEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	DOMTransactionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	DragEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	EditingBeforeInputEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	ErrorEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	FocusEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	GamepadEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	HashChangeEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	IDBVersionChangeEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	KeyboardEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}, {prop: "AltKey", name: "AltKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"altKey\""}, {prop: "CharCode", name: "CharCode", anonymous: false, exported: true, typ: $Int, tag: "js:\"charCode\""}, {prop: "CtrlKey", name: "CtrlKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"ctrlKey\""}, {prop: "Key", name: "Key", anonymous: false, exported: true, typ: $String, tag: "js:\"key\""}, {prop: "KeyIdentifier", name: "KeyIdentifier", anonymous: false, exported: true, typ: $String, tag: "js:\"keyIdentifier\""}, {prop: "KeyCode", name: "KeyCode", anonymous: false, exported: true, typ: $Int, tag: "js:\"keyCode\""}, {prop: "Locale", name: "Locale", anonymous: false, exported: true, typ: $String, tag: "js:\"locale\""}, {prop: "Location", name: "Location", anonymous: false, exported: true, typ: $Int, tag: "js:\"location\""}, {prop: "KeyLocation", name: "KeyLocation", anonymous: false, exported: true, typ: $Int, tag: "js:\"keyLocation\""}, {prop: "MetaKey", name: "MetaKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"metaKey\""}, {prop: "Repeat", name: "Repeat", anonymous: false, exported: true, typ: $Bool, tag: "js:\"repeat\""}, {prop: "ShiftKey", name: "ShiftKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"shiftKey\""}]);
-	MediaStreamEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	MessageEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}, {prop: "Data", name: "Data", anonymous: false, exported: true, typ: ptrType, tag: "js:\"data\""}]);
-	MouseEvent.init("", [{prop: "UIEvent", name: "UIEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}, {prop: "AltKey", name: "AltKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"altKey\""}, {prop: "Button", name: "Button", anonymous: false, exported: true, typ: $Int, tag: "js:\"button\""}, {prop: "ClientX", name: "ClientX", anonymous: false, exported: true, typ: $Int, tag: "js:\"clientX\""}, {prop: "ClientY", name: "ClientY", anonymous: false, exported: true, typ: $Int, tag: "js:\"clientY\""}, {prop: "CtrlKey", name: "CtrlKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"ctrlKey\""}, {prop: "MetaKey", name: "MetaKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"metaKey\""}, {prop: "MovementX", name: "MovementX", anonymous: false, exported: true, typ: $Int, tag: "js:\"movementX\""}, {prop: "MovementY", name: "MovementY", anonymous: false, exported: true, typ: $Int, tag: "js:\"movementY\""}, {prop: "ScreenX", name: "ScreenX", anonymous: false, exported: true, typ: $Int, tag: "js:\"screenX\""}, {prop: "ScreenY", name: "ScreenY", anonymous: false, exported: true, typ: $Int, tag: "js:\"screenY\""}, {prop: "ShiftKey", name: "ShiftKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"shiftKey\""}]);
-	MutationEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	OfflineAudioCompletionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	PageTransitionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	PointerEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	PopStateEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	ProgressEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	RelatedEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	RTCPeerConnectionIceEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	SensorEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	StorageEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	SVGEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	SVGZoomEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	TimeEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	TouchEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	TrackEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	TransitionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	UIEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	UserProximityEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}]);
-	WheelEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$19, tag: ""}, {prop: "DeltaX", name: "DeltaX", anonymous: false, exported: true, typ: $Float64, tag: "js:\"deltaX\""}, {prop: "DeltaY", name: "DeltaY", anonymous: false, exported: true, typ: $Float64, tag: "js:\"deltaY\""}, {prop: "DeltaZ", name: "DeltaZ", anonymous: false, exported: true, typ: $Float64, tag: "js:\"deltaZ\""}, {prop: "DeltaMode", name: "DeltaMode", anonymous: false, exported: true, typ: $Int, tag: "js:\"deltaMode\""}]);
+	AnimationEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	AudioProcessingEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	BeforeInputEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	BeforeUnloadEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	BlobEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	ClipboardEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	CloseEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}, {prop: "Code", name: "Code", anonymous: false, exported: true, typ: $Int, tag: "js:\"code\""}, {prop: "Reason", name: "Reason", anonymous: false, exported: true, typ: $String, tag: "js:\"reason\""}, {prop: "WasClean", name: "WasClean", anonymous: false, exported: true, typ: $Bool, tag: "js:\"wasClean\""}]);
+	CompositionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	CSSFontFaceLoadEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	CustomEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	DeviceLightEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	DeviceMotionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	DeviceOrientationEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	DeviceProximityEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	DOMTransactionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	DragEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	EditingBeforeInputEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	ErrorEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	FocusEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	GamepadEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	HashChangeEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	IDBVersionChangeEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	KeyboardEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}, {prop: "AltKey", name: "AltKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"altKey\""}, {prop: "CharCode", name: "CharCode", anonymous: false, exported: true, typ: $Int, tag: "js:\"charCode\""}, {prop: "CtrlKey", name: "CtrlKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"ctrlKey\""}, {prop: "Key", name: "Key", anonymous: false, exported: true, typ: $String, tag: "js:\"key\""}, {prop: "KeyIdentifier", name: "KeyIdentifier", anonymous: false, exported: true, typ: $String, tag: "js:\"keyIdentifier\""}, {prop: "KeyCode", name: "KeyCode", anonymous: false, exported: true, typ: $Int, tag: "js:\"keyCode\""}, {prop: "Locale", name: "Locale", anonymous: false, exported: true, typ: $String, tag: "js:\"locale\""}, {prop: "Location", name: "Location", anonymous: false, exported: true, typ: $Int, tag: "js:\"location\""}, {prop: "KeyLocation", name: "KeyLocation", anonymous: false, exported: true, typ: $Int, tag: "js:\"keyLocation\""}, {prop: "MetaKey", name: "MetaKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"metaKey\""}, {prop: "Repeat", name: "Repeat", anonymous: false, exported: true, typ: $Bool, tag: "js:\"repeat\""}, {prop: "ShiftKey", name: "ShiftKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"shiftKey\""}]);
+	MediaStreamEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	MessageEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}, {prop: "Data", name: "Data", anonymous: false, exported: true, typ: ptrType, tag: "js:\"data\""}]);
+	MouseEvent.init("", [{prop: "UIEvent", name: "UIEvent", anonymous: true, exported: true, typ: ptrType$21, tag: ""}, {prop: "AltKey", name: "AltKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"altKey\""}, {prop: "Button", name: "Button", anonymous: false, exported: true, typ: $Int, tag: "js:\"button\""}, {prop: "ClientX", name: "ClientX", anonymous: false, exported: true, typ: $Int, tag: "js:\"clientX\""}, {prop: "ClientY", name: "ClientY", anonymous: false, exported: true, typ: $Int, tag: "js:\"clientY\""}, {prop: "CtrlKey", name: "CtrlKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"ctrlKey\""}, {prop: "MetaKey", name: "MetaKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"metaKey\""}, {prop: "MovementX", name: "MovementX", anonymous: false, exported: true, typ: $Int, tag: "js:\"movementX\""}, {prop: "MovementY", name: "MovementY", anonymous: false, exported: true, typ: $Int, tag: "js:\"movementY\""}, {prop: "ScreenX", name: "ScreenX", anonymous: false, exported: true, typ: $Int, tag: "js:\"screenX\""}, {prop: "ScreenY", name: "ScreenY", anonymous: false, exported: true, typ: $Int, tag: "js:\"screenY\""}, {prop: "ShiftKey", name: "ShiftKey", anonymous: false, exported: true, typ: $Bool, tag: "js:\"shiftKey\""}]);
+	MutationEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	OfflineAudioCompletionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	PageTransitionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	PointerEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	PopStateEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	ProgressEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	RelatedEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	RTCPeerConnectionIceEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	SensorEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	StorageEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	SVGEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	SVGZoomEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	TimeEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	TouchEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	TrackEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	TransitionEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	UIEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	UserProximityEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}]);
+	WheelEvent.init("", [{prop: "BasicEvent", name: "BasicEvent", anonymous: true, exported: true, typ: ptrType$20, tag: ""}, {prop: "DeltaX", name: "DeltaX", anonymous: false, exported: true, typ: $Float64, tag: "js:\"deltaX\""}, {prop: "DeltaY", name: "DeltaY", anonymous: false, exported: true, typ: $Float64, tag: "js:\"deltaY\""}, {prop: "DeltaZ", name: "DeltaZ", anonymous: false, exported: true, typ: $Float64, tag: "js:\"deltaZ\""}, {prop: "DeltaMode", name: "DeltaMode", anonymous: false, exported: true, typ: $Int, tag: "js:\"deltaMode\""}]);
 	$init = function() {
 		$pkg.$init = function() {};
 		/* */ var $f, $c = false, $s = 0, $r; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
@@ -35495,7 +35469,7 @@ $packages["math/rand"] = (function() {
 	$pkg.$init = $init;
 	return $pkg;
 })();
-$packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
+$packages["."] = (function() {
 	var $pkg = {}, $init, base64, fmt, locstor, js, jquery, dom, rand, strconv, strings, time, sliceType, arrayType, sliceType$1, funcType, funcType$1, mapType, sliceType$2, ptrType, ptrType$1, completeChallenges, completeChallenges$24ptr, answers, elementsToHide, easterEggs, changelog, unlockedEasterEggs, unlockedEasterEggs$24ptr, jQuery, entryPass, seededRand, _r, loadChallenges, checkChallenge, addChallenge, checkEaster, addEaster, addEasterStr, loadedEaster, updateEasterList, main, debug, checkPass, start, contains, loadSave, save, stringWithCharset, randString, specialCheck, birthday, hideElements, hideContent, showChanges, generateTextBox;
 	base64 = $packages["encoding/base64"];
 	fmt = $packages["fmt"];
@@ -35508,7 +35482,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 	strings = $packages["strings"];
 	time = $packages["time"];
 	sliceType = $sliceType($Int);
-	arrayType = $arrayType($String, 5);
+	arrayType = $arrayType($String, 4);
 	sliceType$1 = $sliceType($emptyInterface);
 	funcType = $funcType([], [], false);
 	funcType$1 = $funcType([$Int], [], false);
@@ -35523,7 +35497,6 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 		$r = addChallenge(1, "Musical Mystery", "What a mystery?", "Everything is black and white", "shaal.wav", 1, "alex"); /* */ $s = 2; case 2: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = addChallenge(0, "Cryptographic Craziness", "In the age of technology and the ever-growing need for heightened security and privacy, the \"Cryptographic hash function\" became popular across every service you may find on the internet. The purpose is to be able to tell if two pieces of data are the same, while not revealing what those two pieces were. It does this by performing a variety of mathematical operations on the data that cannot easily be reversed. An example function would be \"x * (x/2)\" where x is the input data. While this is a very easy operation to perform, it is very hard to predict what x was from the output.  Most companies use this for password authentication. For example, if your password for Google was \"O! You live!\", it would be stored as 4CE56E4DA84F0EBFCBD51FACAE04C706 (this is a MD5 hash, which is a very popular cryptographic hash function) which cannot be used to figure out the original password. This means that hackers who somehow get a hold of these stored \"hashes\", would be unable to produce or figure out the original password in order to log into the website.", "Your task is to create a cryptographic hash function. The requirement here is to create a function that has an input named x that outputs a number that cannot be multiplied, divided, etc. to figure out x", "When you are complete, zip me an email at davis.davalos.delosh@gmail.com with your function, and I will give you the password for this challenge", 2, "yickerhicker"); /* */ $s = 3; case 3: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$r = addChallenge(1, "Code Comprehension", "The code for this website is written in a language called Go (by Google). It is a perfect example of a programming idea called abstraction, where repetitive tasks are put into objects called functions, that allow those repetitive tasks to be accomplished in a single line of code, using prewritten code. If my code is descriptive enough, it should be quite easy to find out the answer to this", "Your job is to find out the answer to this question by reading the code for this part of the website. My code is split up into 9 different files pertaining to what it deals with. The following snippet of code handles adding challenges to the website, however I have removed the answers to other challenges for obvious reasons.", "Chal4Snippet.txt", 3, "racketball43"); /* */ $s = 4; case 4: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
-		$r = addChallenge(0, "Reality", "", "(i'm sorry, this ones impossible without cheating (which I encourage you to try), so really, it's the ultimate challenge. Why would I do that? I get the same feeling as if I got something off my chest from telling somebody else something I've been holding in, but without actually telling anybody. It won't work. I know)", "Gucci Gang, ooh, yeah, Lil Pump, yeah, Gucci Gang, ooh Gucci gang, Gucci gang, Gucci gang, Gucci gang Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Spend ten racks on a new chain My bitch love do cocaine, ooh I fuck a bitch, I forgot her name I can't buy a bitch no wedding ring Rather go and buy Balmains Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Gucci gang, Gucci gang, Gucci gang, Gucci gang Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Spend ten racks on a new chain My bitch love do cocaine, ooh I fuck a bitch, I forgot her name, yeah I can't buy no bitch no wedding ring Rather go and buy Balmains, aye Gucci gang, Gucci gang, Gucci gang My lean cost more than your rent, ooh Your mama still live in a tent, yeah Still slanging dope in the jets, huh Me and my grandma take meds, ooh None of this shit be new to me Fucking my teacher, call it tutory Bought some red bottoms, cost hella Gs Fuck your airline, fuck your company Bitch, your breath smell like some cigarettes I'd rather fuck a bitch from the projects They kicked me out the plane off a Percocet Now Lil Pump fly a private jet Everybody screaming \"fuck West Jet!\" Lil Pump still sell that meth Hunnid on my wrist sippin on Tech Fuck a lil bitch, make her pussy wet Gucci gang, Gucci gang, Gucci gang, Gucci gang Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Spend ten racks on a new chain My bitch love do cocaine, ooh I fuck a bitch, I forgot her name I can't buy a bitch no wedding ring Rather go and buy Balmains Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Gucci gang, Gucci gang, Gucci gang, Gucci gang Gucci gang, Gucci gang, Gucci gang (Gucci gang!) Spend ten racks on a new chain My bitch love do cocaine, ooh I fuck a bitch, I forgot her name I can't buy no bitch no wedding ring Rather go and buy Balmains, aye Gucci gang, Gucci gang, Gucci gang Lil Pump, yeah, Lil Pump, ooh", 4, "I feel like I'm trapped in a cage of self deprecation. All my actions end up hurting myself, i feel like nothing I will do will fix anything. I need somebody to love, and somebody to love me back other than my parents, but that isn't happening any time soon, now is it?"); /* */ $s = 5; case 5: if($c) { $c = false; $r = $r.$blk(); } if ($r && $r.$blk !== undefined) { break s; }
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: loadChallenges }; } $f.$s = $s; $f.$r = $r; return $f;
 	};
@@ -35547,7 +35520,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 	addChallenge = function(chalType, title, description, info, textToDecode, id, answer) {
 		var _arg, _arg$1, _arg$10, _arg$11, _arg$12, _arg$13, _arg$14, _arg$15, _arg$16, _arg$17, _arg$18, _arg$19, _arg$2, _arg$20, _arg$3, _arg$4, _arg$5, _arg$6, _arg$7, _arg$8, _arg$9, _r$1, _r$10, _r$11, _r$12, _r$13, _r$14, _r$15, _r$16, _r$17, _r$18, _r$19, _r$2, _r$20, _r$21, _r$22, _r$23, _r$24, _r$25, _r$26, _r$27, _r$28, _r$29, _r$3, _r$30, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, answer, backgroundB, br, chalType, decodeB, descP, description, div, divID, downloadButton, downloadDiv, h4Title, h5, hideButton, hintsP, id, info, infoB, subButton, textP, textToDecode, title, x, x$1, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _arg = $f._arg; _arg$1 = $f._arg$1; _arg$10 = $f._arg$10; _arg$11 = $f._arg$11; _arg$12 = $f._arg$12; _arg$13 = $f._arg$13; _arg$14 = $f._arg$14; _arg$15 = $f._arg$15; _arg$16 = $f._arg$16; _arg$17 = $f._arg$17; _arg$18 = $f._arg$18; _arg$19 = $f._arg$19; _arg$2 = $f._arg$2; _arg$20 = $f._arg$20; _arg$3 = $f._arg$3; _arg$4 = $f._arg$4; _arg$5 = $f._arg$5; _arg$6 = $f._arg$6; _arg$7 = $f._arg$7; _arg$8 = $f._arg$8; _arg$9 = $f._arg$9; _r$1 = $f._r$1; _r$10 = $f._r$10; _r$11 = $f._r$11; _r$12 = $f._r$12; _r$13 = $f._r$13; _r$14 = $f._r$14; _r$15 = $f._r$15; _r$16 = $f._r$16; _r$17 = $f._r$17; _r$18 = $f._r$18; _r$19 = $f._r$19; _r$2 = $f._r$2; _r$20 = $f._r$20; _r$21 = $f._r$21; _r$22 = $f._r$22; _r$23 = $f._r$23; _r$24 = $f._r$24; _r$25 = $f._r$25; _r$26 = $f._r$26; _r$27 = $f._r$27; _r$28 = $f._r$28; _r$29 = $f._r$29; _r$3 = $f._r$3; _r$30 = $f._r$30; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; answer = $f.answer; backgroundB = $f.backgroundB; br = $f.br; chalType = $f.chalType; decodeB = $f.decodeB; descP = $f.descP; description = $f.description; div = $f.div; divID = $f.divID; downloadButton = $f.downloadButton; downloadDiv = $f.downloadDiv; h4Title = $f.h4Title; h5 = $f.h5; hideButton = $f.hideButton; hintsP = $f.hintsP; id = $f.id; info = $f.info; infoB = $f.infoB; subButton = $f.subButton; textP = $f.textP; textToDecode = $f.textToDecode; title = $f.title; x = $f.x; x$1 = $f.x$1; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
-		_r$1 = fmt.Println(new sliceType$1([new $Int(5)])); /* */ $s = 1; case 1: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
+		_r$1 = fmt.Println(new sliceType$1([new $Int(4)])); /* */ $s = 1; case 1: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 		_r$1;
 		((id < 0 || id >= answers.length) ? ($throwRuntimeError("index out of range"), undefined) : answers[id] = answer);
 		_r$2 = jQuery(new sliceType$1([new $String("<h4></h4>")])); /* */ $s = 2; case 2: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
@@ -35934,7 +35907,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 			if (!($interfaceIsEqual(err$1, $ifaceNil))) {
 				$global.alert($externalize("Cannot save your work! Try using a different browser", $String));
 			}
-			_r$3 = $clone(store, locstor.DataStore).Save("previousRev", new $Float64(0.4)); /* */ $s = 3; case 3: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
+			_r$3 = $clone(store, locstor.DataStore).Save("previousRev", new $Float64(0.5)); /* */ $s = 3; case 3: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 			err$2 = _r$3;
 			if (!($interfaceIsEqual(err$2, $ifaceNil))) {
 				$global.alert($externalize("Cannot save your work! Try using a different browser", $String));
@@ -36077,22 +36050,22 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 		$go((function $b() {
 			var _i, _r$1, _r$2, _r$3, _r$4, _r$5, _r$6, _r$7, _r$8, _r$9, _ref, val, $s, $r;
 			/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _i = $f._i; _r$1 = $f._r$1; _r$2 = $f._r$2; _r$3 = $f._r$3; _r$4 = $f._r$4; _r$5 = $f._r$5; _r$6 = $f._r$6; _r$7 = $f._r$7; _r$8 = $f._r$8; _r$9 = $f._r$9; _ref = $f._ref; val = $f.val; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
-			/* */ if (!((previousRev === 0.4))) { $s = 1; continue; }
+			/* */ if (!((previousRev === 0.5))) { $s = 1; continue; }
 			/* */ $s = 2; continue;
-			/* if (!((previousRev === 0.4))) { */ case 1:
+			/* if (!((previousRev === 0.5))) { */ case 1:
 				_r$1 = fmt.Println(new sliceType$1([new $String("Changes detected")])); /* */ $s = 3; case 3: if($c) { $c = false; _r$1 = _r$1.$blk(); } if (_r$1 && _r$1.$blk !== undefined) { break s; }
 				_r$1;
 				_r$2 = jQuery(new sliceType$1([new $String("#changes")])); /* */ $s = 4; case 4: if($c) { $c = false; _r$2 = _r$2.$blk(); } if (_r$2 && _r$2.$blk !== undefined) { break s; }
 				_r$3 = $clone(_r$2, jquery.JQuery).Show(new sliceType$1([])); /* */ $s = 5; case 5: if($c) { $c = false; _r$3 = _r$3.$blk(); } if (_r$3 && _r$3.$blk !== undefined) { break s; }
 				_r$3;
 				_r$4 = jQuery(new sliceType$1([new $String("#versionChange")])); /* */ $s = 6; case 6: if($c) { $c = false; _r$4 = _r$4.$blk(); } if (_r$4 && _r$4.$blk !== undefined) { break s; }
-				_r$5 = fmt.Sprintf("Upgraded from version %v to %v!", new sliceType$1([new $Float64(previousRev), new $Float64(0.4)])); /* */ $s = 7; case 7: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
+				_r$5 = fmt.Sprintf("Upgraded from version %v to %v!", new sliceType$1([new $Float64(previousRev), new $Float64(0.5)])); /* */ $s = 7; case 7: if($c) { $c = false; _r$5 = _r$5.$blk(); } if (_r$5 && _r$5.$blk !== undefined) { break s; }
 				_r$6 = $clone(_r$4, jquery.JQuery).SetText(new $String(_r$5)); /* */ $s = 8; case 8: if($c) { $c = false; _r$6 = _r$6.$blk(); } if (_r$6 && _r$6.$blk !== undefined) { break s; }
 				_r$6;
 				_ref = changelog;
 				_i = 0;
 				/* while (true) { */ case 9:
-					/* if (!(_i < 4)) { break; } */ if(!(_i < 4)) { $s = 10; continue; }
+					/* if (!(_i < 1)) { break; } */ if(!(_i < 1)) { $s = 10; continue; }
 					val = ((_i < 0 || _i >= _ref.length) ? ($throwRuntimeError("index out of range"), undefined) : _ref[_i]);
 					_r$7 = jQuery(new sliceType$1([new $String("#changeList")])); /* */ $s = 11; case 11: if($c) { $c = false; _r$7 = _r$7.$blk(); } if (_r$7 && _r$7.$blk !== undefined) { break s; }
 					_r$8 = fmt.Sprintf("<li>%s</li>", new sliceType$1([new $String(val)])); /* */ $s = 12; case 12: if($c) { $c = false; _r$8 = _r$8.$blk(); } if (_r$8 && _r$8.$blk !== undefined) { break s; }
@@ -36149,7 +36122,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 		unlockedEasterEggs = sliceType.nil;
 		elementsToHide = $toNativeArray($kindString, ["#changes", "#birthdaySpecial", "#specialEvent"]);
 		easterEggs = $toNativeArray($kindString, ["crush%you^<3", "morgan", "bailey^;-) for two reasons", "alex%root", "davis%davalos%delosh", "test", "consummation", "jasica", "anal%probe", "booty", "rakesh", "chris", "github", "creep", "alida", "maya", "maya%alex^;-)", "cooper", "maxine", "payden^Yeeet", "yeet", "dead%fish", "tag", "skyrisbactera", "truth%or%dare", "never%find^That's right!", "ux985"]);
-		changelog = $toNativeArray($kindString, ["Published to Github for better reliability and openness", "Added 17 more easter eggs", "New challenges!", "Fixed bug where decode appears twice"]);
+		changelog = $toNativeArray($kindString, ["Removed cringy challenge #5"]);
 		jQuery = jquery.NewJQuery;
 		seededRand = rand.New(rand.NewSource($clone(time.Now(), time.Time).UnixNano()));
 		_r = randString(5); /* */ $s = 11; case 11: if($c) { $c = false; _r = _r.$blk(); } if (_r && _r.$blk !== undefined) { break s; }
@@ -36164,7 +36137,7 @@ $packages["github.com/SkyrisBactera/Alex Site/public"] = (function() {
 	return $pkg;
 })();
 $synthesizeMethods();
-var $mainPkg = $packages["github.com/SkyrisBactera/Alex Site/public"];
+var $mainPkg = $packages["."];
 $packages["runtime"].$init();
 $go($mainPkg.$init, []);
 $flushConsole();
